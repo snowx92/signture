@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* Custom RTL animations */
+@keyframes slideInLeftRTL {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRightRTL {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[dir="rtl"] .animate-slide-in-left {
+  animation: slideInLeftRTL 1s ease-out;
+}
+
+[dir="rtl"] .animate-slide-in-right {
+  animation: slideInRightRTL 1s ease-out 0.2s both;
+}
+
+/* Arabic font support */
+[lang="ar"] {
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-weight: 400;
+}
+
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6 {
+  font-weight: 600;
+}
+
+/* Fix for Arabic text in gradients */
+[lang="ar"] .bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+}

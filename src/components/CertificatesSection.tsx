@@ -1,14 +1,11 @@
 'use client';
 
 import React from 'react';
-import { CheckCircle, Users, TrendingUp, BookOpen, Medal, Trophy } from 'lucide-react';
-import { useLanguage } from './ClientIntlProvider';
+import { CheckCircle, Medal, Trophy } from 'lucide-react';
 import Message from './Message';
 import Image from 'next/image';
 
 const CertificatesSection = () => {
-  const { direction } = useLanguage();
-
   const certificates = [
     {
       id: 1,

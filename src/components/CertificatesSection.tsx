@@ -11,7 +11,7 @@ const CertificatesSection = () => {
       id: 1,
       name: 'ISO 21001:2018',
       category: 'Educational Organizations',
-      description: 'Management systems for educational organizations - enhancing satisfaction of learners, other beneficiaries and staff',
+      description: 'Management systems for educational organinavzations - enhancing satisfaction of learners, other beneficiaries and staff',
       logo: '/cert/iso21001.png',
       color: 'from-blue-500 to-indigo-600',
       bgColor: 'bg-blue-50'

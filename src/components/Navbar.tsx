@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
@@ -10,6 +11,7 @@ import Message from './Message';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, direction, toggleLanguage } = useLanguage();
+  const pathname = usePathname();
 
   const navLinks = [
     { href: '/', labelId: 'nav.home', fallback: 'Home' },
@@ -21,6 +23,13 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isActiveLink = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
   };
 
   return (
@@ -60,10 +69,16 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 relative group ${
+                    isActiveLink(link.href)
+                      ? 'text-blue-600'
+                      : 'text-gray-700 hover:text-blue-600'
+                  }`}
                 >
                   <Message id={link.labelId} fallback={link.fallback} />
-                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                  <span className={`absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 transform transition-transform duration-200 ${
+                    isActiveLink(link.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                  }`}></span>
                 </Link>
               ))}
               
@@ -144,7 +159,11 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md"
+                className={`block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md ${
+                  isActiveLink(link.href)
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Message id={link.labelId} fallback={link.fallback} />

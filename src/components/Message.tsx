@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import { useLanguage } from './ClientIntlProvider';
 
 interface MessageProps {
@@ -16,9 +17,6 @@ const Message: React.FC<MessageProps> = ({ id, fallback, values }) => {
     return <>{fallback}</>;
   }
 
-  // Dynamic import to avoid SSR issues
-  const { FormattedMessage } = require('react-intl');
-  
   return <FormattedMessage id={id} defaultMessage={fallback} values={values} />;
 };
 

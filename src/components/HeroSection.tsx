@@ -30,10 +30,6 @@ const HeroSection = () => {
     certified: 'Certified Programs'
   };
 
-  const handleConsultation = () => {
-    // Implementation of handleConsultation function
-  };
-
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
       {/* Background decoration */}

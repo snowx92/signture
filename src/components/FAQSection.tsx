@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle, Phone, Mail } from 'lucide-react';
-import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 
 const FAQSection = () => {

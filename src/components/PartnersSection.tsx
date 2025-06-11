@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { Star, Globe, Users, Award, BookOpen, Handshake } from 'lucide-react';
-import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 import Image from 'next/image';
 

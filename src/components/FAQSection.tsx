@@ -6,8 +6,7 @@ import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 
 const FAQSection = () => {
-  const { direction } = useLanguage();
-  const [openItems, setOpenItems] = useState<number[]>([0]); // First item open by default
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -52,11 +51,9 @@ const FAQSection = () => {
     }
   ];
 
-  const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(item => item !== index)
-        : [...prev, index]
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(prev => 
+      prev === index ? null : index
     );
   };
 
@@ -104,9 +101,9 @@ const FAQSection = () => {
                   className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
                 >
                   <button
-                    onClick={() => toggleItem(index)}
+                    onClick={() => toggleFAQ(index)}
                     className={`w-full px-6 py-6 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ${
-                      openItems.includes(index) ? 'bg-blue-50' : 'hover:bg-gray-50'
+                      openIndex === index ? 'bg-blue-50' : 'hover:bg-gray-50'
                     }`}
                   >
                     <div className="flex items-center justify-between">
@@ -114,7 +111,7 @@ const FAQSection = () => {
                         <Message id={`faq.question.${faq.id}`} fallback={faq.question} />
                       </h3>
                       <div className="flex-shrink-0">
-                        {openItems.includes(index) ? (
+                        {openIndex === index ? (
                           <ChevronUp className="w-6 h-6 text-blue-600" />
                         ) : (
                           <ChevronDown className="w-6 h-6 text-gray-400" />
@@ -124,7 +121,7 @@ const FAQSection = () => {
                   </button>
                   
                   <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openItems.includes(index) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="px-6 pb-6">
                       <p className="text-gray-600 leading-relaxed">
@@ -179,8 +176,6 @@ const FAQSection = () => {
                 </a>
               </div>
             </div>
-
-
 
             {/* Quick Tips */}
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-200">

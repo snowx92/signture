@@ -7,7 +7,7 @@ import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 
 const Footer: React.FC = () => {
-  const { direction, isClient } = useLanguage();
+  const { direction } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white">

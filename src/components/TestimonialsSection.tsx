@@ -4,9 +4,18 @@ import React, { useState, useEffect, useMemo, useCallback, memo } from 'react';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from './ClientIntlProvider';
 
+// Define testimonial type
+interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  text: string;
+  rating: number;
+}
+
 // Memoized testimonial card component for better performance
 const TestimonialCard = memo(({ testimonial, isVisible }: { 
-  testimonial: any; 
+  testimonial: Testimonial; 
   isVisible: boolean; 
 }) => {
   if (!isVisible) {
@@ -32,7 +41,7 @@ const TestimonialCard = memo(({ testimonial, isVisible }: {
       
       {/* Testimonial text */}
       <blockquote className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8 text-center">
-        "{testimonial.text}"
+        &ldquo;{testimonial.text}&rdquo;
       </blockquote>
       
       {/* Author info */}

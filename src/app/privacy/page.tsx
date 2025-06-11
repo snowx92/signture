@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Eye, Lock, UserCheck } from 'lucide-react';
+import Link from 'next/link';
 
 export default function PrivacyPage() {
   return (
@@ -116,10 +117,10 @@ export default function PrivacyPage() {
             </h2>
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                <strong>5.1 Access Rights:</strong> You have the right to access your student's educational records and request copies when appropriate.
+                <strong>5.1 Access Rights:</strong> You have the right to access your student&apos;s educational records and request copies when appropriate.
               </p>
               <p>
-                <strong>5.2 Correction Rights:</strong> You may request correction of inaccurate information in your student's records.
+                <strong>5.2 Correction Rights:</strong> You may request correction of inaccurate information in your student&apos;s records.
               </p>
               <p>
                 <strong>5.3 Privacy Preferences:</strong> You may opt out of non-essential communications while maintaining necessary educational communications.
@@ -172,12 +173,12 @@ export default function PrivacyPage() {
 
         {/* Back to Home */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition-colors duration-300"
           >
             ← Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

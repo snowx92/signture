@@ -5,7 +5,7 @@ import { useLanguage } from './ClientIntlProvider';
 
 interface MessageProps {
   id: string;
-  fallback: string;
+  fallback?: string;
   values?: Record<string, React.ReactNode>;
 }
 
@@ -19,7 +19,7 @@ const Message: React.FC<MessageProps> = ({ id, fallback, values }) => {
   // Dynamic import to avoid SSR issues
   const { FormattedMessage } = require('react-intl');
   
-  return <FormattedMessage id={id} values={values} />;
+  return <FormattedMessage id={id} defaultMessage={fallback} values={values} />;
 };
 
 export default Message; 

@@ -127,7 +127,7 @@ const AboutSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {values.map((value, index) => {
+          {values.map((value) => {
             const IconComponent = value.icon;
             return (
               <div

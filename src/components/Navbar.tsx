@@ -9,7 +9,7 @@ import Message from './Message';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language, direction, toggleLanguage, isClient } = useLanguage();
+  const { language, direction, toggleLanguage } = useLanguage();
 
   const navLinks = [
     { href: '/', labelId: 'nav.home', fallback: 'Home' },

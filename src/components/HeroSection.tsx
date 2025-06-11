@@ -7,7 +7,7 @@ import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 
 const HeroSection = () => {
-  const { direction, isClient } = useLanguage();
+  const { direction } = useLanguage();
 
   const fallbackContent = {
     badge: 'World-Class Education',
@@ -28,6 +28,10 @@ const HeroSection = () => {
     excellence: 'Excellence in Education',
     liveLearning: 'Live Learning',
     certified: 'Certified Programs'
+  };
+
+  const handleConsultation = () => {
+    // Implementation of handleConsultation function
   };
 
   return (

@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import { Award, Shield, Star, CheckCircle, Trophy, Medal, FileCheck, Globe } from 'lucide-react';
+import { CheckCircle, Users, TrendingUp, BookOpen } from 'lucide-react';
 import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
+import Image from 'next/image';
 
 const CertificatesSection = () => {
   const { direction } = useLanguage();
@@ -112,7 +112,7 @@ const CertificatesSection = () => {
 
         {/* Certificates Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-          {certificates.map((cert, index) => (
+          {certificates.map((cert) => (
             <div 
               key={cert.id}
               className={`group ${cert.bgColor} rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-gray-100 hover:border-gray-200 overflow-hidden`}

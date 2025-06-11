@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, FileText, Users, AlertCircle } from 'lucide-react';
+import Link from 'next/link';
 
 export default function TermsPage() {
   return (
@@ -106,12 +107,12 @@ export default function TermsPage() {
 
         {/* Back to Home */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300"
           >
             ← Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

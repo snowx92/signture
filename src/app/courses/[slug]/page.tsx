@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Clock, Users, Star, BookOpen, CheckCircle, ArrowLeft, Globe, Award, Calendar } from 'lucide-react';
+import { Clock, Users, Star, CheckCircle, ArrowLeft, Award } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../../../components/ClientIntlProvider';

@@ -6,15 +6,7 @@ import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 
 const AnnounceBar: React.FC = () => {
-  const { direction, isClient } = useLanguage();
-
-  // Fallback content for SSR
-  const fallbackContent = {
-    phone: '+20 12 75444617',
-    email: 'signatureacademy30@gmail.com',
-    address: '٢ / أأ. عبدالرحمن رشدي الدور الارضي مكتب ١  بجوار مسجد ابو بكر الصديق بجوار قسم النزهه',
-    followUs: 'Follow us:'
-  };
+  const { direction } = useLanguage();
 
   return (
     <div className="bg-gray-900 text-white py-2 px-4">

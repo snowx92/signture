@@ -7,8 +7,6 @@ import Message from './Message';
 import Image from 'next/image';
 
 const PartnersSection = () => {
-  const { direction } = useLanguage();
-
   const partners = [
     {
       id: 1,
@@ -125,7 +123,7 @@ const PartnersSection = () => {
 
         {/* Partners Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {partners.map((partner, index) => (
+          {partners.map((partner) => (
             <div 
               key={partner.id}
               className={`group ${partner.bgColor} rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-gray-100 hover:border-gray-200 overflow-hidden`}

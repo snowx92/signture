@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle, Phone, Mail } from 'lucide-react';
 import Message from './Message';
+import { useLanguage } from './ClientIntlProvider';
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const { direction } = useLanguage();
 
   const faqs = [
     {
@@ -150,11 +152,11 @@ const FAQSection = () => {
               <div className="space-y-4">
                 <a
                   href="tel:+201275444617"
-                  className="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300"
+                  className={`flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300 ${direction === 'rtl' ? 'space-x-reverse' : ''}`}
                 >
                   <Phone className="w-5 h-5 text-blue-200" />
                   <div>
-                    <div className="font-semibold text-sm">+20 12 75444617</div>
+                    <div className="font-semibold text-sm" dir="ltr">+20 12 75444617</div>
                     <div className="text-blue-200 text-xs">
                       <Message id="faq.contact.phone" fallback="Call us now" />
                     </div>
@@ -163,11 +165,11 @@ const FAQSection = () => {
                 
                 <a
                   href="mailto:signatureacademy30@gmail.com"
-                  className="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300"
+                  className={`flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300 ${direction === 'rtl' ? 'space-x-reverse' : ''}`}
                 >
                   <Mail className="w-5 h-5 text-blue-200" />
                   <div>
-                    <div className="font-semibold text-sm break-all">signatureacademy30@gmail.com</div>
+                    <div className="font-semibold text-sm break-all" dir="ltr">signatureacademy30@gmail.com</div>
                     <div className="text-blue-200 text-xs">
                       <Message id="faq.contact.email" fallback="Send us an email" />
                     </div>

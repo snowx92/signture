@@ -9,6 +9,19 @@ import Message from './Message';
 const HeroSection = () => {
   const { direction } = useLanguage();
 
+  const scrollToPrograms = () => {
+    const element = document.getElementById('programs');
+    if (element) {
+      const navbarHeight = 80; // Approximate navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const fallbackContent = {
     badge: 'World-Class Education',
     welcome: 'Welcome to',
@@ -100,13 +113,12 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in delay-700">
-              <button className={`group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
+              <button 
+                onClick={scrollToPrograms}
+                className={`group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}
+              >
                 <Message id="hero.cta.explore" fallback={fallbackContent.explore} />
                 <ArrowRight className={`w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 ${direction === 'rtl' ? 'mr-2 ml-0 rotate-180 group-hover:-translate-x-1' : 'ml-2'}`} />
-              </button>
-              
-              <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105">
-                <Message id="hero.cta.visit" fallback={fallbackContent.visit} />
               </button>
             </div>
 

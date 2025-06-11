@@ -220,31 +220,31 @@ const CTASection = () => {
               </h4>
               
               <div className="space-y-4">
-                <div className="flex items-center space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300">
+                <div className={`flex items-center space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300 ${direction === 'rtl' ? 'space-x-reverse' : ''}`}>
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold">+20 12 75444617</p>
+                    <p className="text-white font-semibold" dir="ltr">+20 12 75444617</p>
                     <p className="text-blue-200 text-sm">
                       <Message id="cta.contact.phone" fallback="Call us anytime" />
                     </p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300">
+                <div className={`flex items-center space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300 ${direction === 'rtl' ? 'space-x-reverse' : ''}`}>
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold break-all">signatureacademy30@gmail.com</p>
+                    <p className="text-white font-semibold break-all" dir="ltr">signatureacademy30@gmail.com</p>
                     <p className="text-blue-200 text-sm">
                       <Message id="cta.contact.email" fallback="Quick response guaranteed" />
                     </p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300">
+                <div className={`flex items-start space-x-4 group hover:bg-white/10 rounded-lg p-3 transition-all duration-300 ${direction === 'rtl' ? 'space-x-reverse' : ''}`}>
                   <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0 mt-1">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>

@@ -63,27 +63,29 @@ const Footer: React.FC = () => {
               <Message id="footer.contact.title" fallback="Contact Info" />
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-3">
+              <div className={`flex items-center gap-3 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <a 
                   href="tel:+201275444617"
                   className="text-gray-300 hover:text-white transition-colors duration-200"
+                  dir="ltr"
                 >
-                  <Message id="footer.contact.phone" fallback="+20 12 75444617" />
+                  +20 12 75444617
                 </a>
               </div>
               
-              <div className="flex items-center gap-3">
+              <div className={`flex items-center gap-3 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <a 
                   href="mailto:signatureacademy30@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors duration-200 break-all"
+                  dir="ltr"
                 >
-                  <Message id="footer.contact.email" fallback="signatureacademy30@gmail.com" />
+                  signatureacademy30@gmail.com
                 </a>
               </div>
               
-              <div className="flex items-start gap-3">
+              <div className={`flex items-start gap-3 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <a 
                   href="https://www.google.com/maps/place//@30.1065521,31.3401985,17z/data=!4m6!1m5!3m4!2zMzDCsDA2JzIzLjYiTiAzMcKwMjAnMzQuMCJF!8m2!3d30.1065521!4d31.3427734?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"

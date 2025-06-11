@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useLanguage } from '../../../components/ClientIntlProvider';
 import Message from '../../../components/Message';
+import { use } from 'react';
 
 interface CourseData {
   id: string;
@@ -585,8 +586,9 @@ const coursesData: { [key: string]: CourseData } = {
 
 // Add more course data here for other courses...
 
-export default function CoursePage({ params }: { params: { slug: string } }) {
-  const course = coursesData[params.slug];
+export default function CoursePage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = use(params);
+  const course = coursesData[resolvedParams.slug];
   const { direction } = useLanguage();
 
   const handleEnrollment = (courseTitle: string) => {
@@ -780,8 +782,6 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             </div>
-
-
 
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">

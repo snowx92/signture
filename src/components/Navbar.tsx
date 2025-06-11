@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
@@ -12,24 +12,63 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, direction, toggleLanguage } = useLanguage();
   const pathname = usePathname();
+  const router = useRouter();
 
   const navLinks = [
-    { href: '/', labelId: 'nav.home', fallback: 'Home' },
-    { href: '/about', labelId: 'nav.about', fallback: 'About Us' },
-    { href: '/courses', labelId: 'nav.courses', fallback: 'Courses' },
-    { href: '/contact', labelId: 'nav.contact', fallback: 'Contact Us' },
-    { href: '/faqs', labelId: 'nav.faqs', fallback: 'FAQs' }
+    { href: '/', labelId: 'nav.home', fallback: 'Home', section: null },
+    { href: '/#about', labelId: 'nav.about', fallback: 'About Us', section: 'about' },
+    { href: '/#programs', labelId: 'nav.programs', fallback: 'Programs', section: 'programs' },
+    { href: '/#testimonials', labelId: 'nav.testimonials', fallback: 'Reviews', section: 'testimonials' },
+    { href: '/#faqs', labelId: 'nav.faqs', fallback: 'FAQs', section: 'faqs' },
+    { href: '/#contact', labelId: 'nav.contact', fallback: 'Contact', section: 'contact' }
   ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const isActiveLink = (href: string) => {
+  const isActiveLink = (href: string, section: string | null) => {
     if (href === '/') {
       return pathname === '/';
     }
-    return pathname.startsWith(href);
+    // For section links, check if we're on home page
+    if (section && pathname === '/') {
+      return false; // We could add active section detection here later
+    }
+    return pathname.startsWith(href.split('#')[0]);
+  };
+
+  const handleNavClick = (href: string, section: string | null) => {
+    if (section) {
+      // If we're not on the home page, navigate to home first
+      if (pathname !== '/') {
+        router.push('/');
+        // Wait for navigation to complete, then scroll
+        setTimeout(() => {
+          scrollToSection(section);
+        }, 100);
+      } else {
+        // We're already on home page, just scroll
+        scrollToSection(section);
+      }
+    } else {
+      // Regular navigation for home link
+      router.push(href);
+    }
+    setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 80; // Approximate navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -66,20 +105,20 @@ const Navbar = () => {
           <div className={`hidden lg:block ${direction === 'rtl' ? 'order-1' : 'order-2'}`}>
             <div className={`flex items-baseline ${direction === 'rtl' ? 'space-x-reverse space-x-8' : 'space-x-8'}`}>
               {navLinks.map((link) => (
-                <Link
+                <button
                   key={link.href}
-                  href={link.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 relative group ${
-                    isActiveLink(link.href)
+                  onClick={() => handleNavClick(link.href, link.section)}
+                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 relative group cursor-pointer ${
+                    isActiveLink(link.href, link.section)
                       ? 'text-blue-600'
                       : 'text-gray-700 hover:text-blue-600'
                   }`}
                 >
                   <Message id={link.labelId} fallback={link.fallback} />
                   <span className={`absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 transform transition-transform duration-200 ${
-                    isActiveLink(link.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                    isActiveLink(link.href, link.section) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                   }`}></span>
-                </Link>
+                </button>
               ))}
               
               {/* Language Switcher - Desktop */}
@@ -156,18 +195,17 @@ const Navbar = () => {
         <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
             {navLinks.map((link) => (
-              <Link
+              <button
                 key={link.href}
-                href={link.href}
-                className={`block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md ${
-                  isActiveLink(link.href)
+                onClick={() => handleNavClick(link.href, link.section)}
+                className={`w-full text-left block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md ${
+                  isActiveLink(link.href, link.section)
                     ? 'text-blue-600 bg-blue-50'
                     : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                 }`}
-                onClick={() => setIsMenuOpen(false)}
               >
                 <Message id={link.labelId} fallback={link.fallback} />
-              </Link>
+              </button>
             ))}
           </div>
         </div>

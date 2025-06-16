@@ -27,10 +27,10 @@ const CertificatesSection = () => {
     },
     {
       id: 3,
-      name: 'NQA Certification',
+      name: 'NQI Certification',
       category: 'Quality Assurance',
       description: 'National Quality Assurance accreditation demonstrating our commitment to excellence and continuous improvement',
-      logo: '/cert/nqa.png',
+      logo: '/cert/National_Quality_Institute.png',
       color: 'from-purple-500 to-violet-600',
       bgColor: 'bg-purple-50'
     },

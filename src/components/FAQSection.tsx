@@ -49,6 +49,11 @@ const FAQSection = () => {
       id: 8,
       question: 'Can I visit the academy before enrolling?',
       answer: 'Absolutely! We encourage prospective students and parents to visit our campus. You can schedule a guided tour, meet our educators, observe classes, and get a feel for our learning environment. Virtual tours are also available for those who cannot visit in person.'
+    },
+    {
+      id: 9,
+      question: 'Do you offer both online and offline courses?',
+      answer: 'Yes, we offer both online and offline learning options to accommodate different needs and preferences. Our offline courses provide traditional classroom experiences with direct teacher interaction and hands-on activities. Online courses offer flexibility with self-paced learning and interactive digital content. Both formats maintain the same curriculum standards and certification value. We also offer hybrid options that combine both approaches, allowing students to attend some sessions in person and others remotely.'
     }
   ];
 

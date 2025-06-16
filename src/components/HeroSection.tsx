@@ -27,6 +27,8 @@ const HeroSection = () => {
     welcome: 'Welcome to',
     brandName: 'Signature Academy',
     subtitle: 'Empowering Tomorrow\'s Leaders, Today',
+    slogan: 'Learn today, lead tomorrow',
+    sloganAr: 'اتدرب انطلق',
     description: 'At Signature Academy, we nurture young minds through world-class education rooted in values, creativity, and innovation. Our globally recognized programs and expert educators prepare students with the skills, confidence, and mindset to thrive in a changing world.',
     values: 'values',
     creativity: 'creativity',
@@ -74,6 +76,11 @@ const HeroSection = () => {
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 animate-slide-in-right">
                 <Message id="hero.subtitle" fallback={fallbackContent.subtitle} />
               </h2>
+              
+              {/* Slogan */}
+              <p className="text-lg sm:text-xl italic font-medium text-blue-600 animate-slide-in-right">
+                <Message id="hero.slogan" fallback={fallbackContent.slogan} />
+              </p>
             </div>
 
             {/* Description */}

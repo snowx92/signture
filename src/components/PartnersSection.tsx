@@ -27,10 +27,10 @@ const PartnersSection = () => {
     },
     {
       id: 3,
-      name: 'Ekaasa Arab',
+      name: 'EKAASALARAB',
       logo: '/partners/EKAASALARAB.png',
       type: 'Regional Excellence',
-      description: 'Leading Arab educational excellence and accreditation organization',
+      description: 'Leading Arab educational exceعحيشفثيllence and accreditation organization',
       bgColor: 'bg-green-50',
       color: 'from-green-500 to-green-600'
     },

@@ -84,7 +84,7 @@ const ProgramsSection = () => {
       shortDesc: 'Comprehensive understanding of HR functions, processes, and emerging workplace technologies.',
       duration: '6-9 months',
       level: 'All Levels',
-      image: '/placeholder-hr.jpg',
+      image: '/programs/HR.jpeg',
       color: 'from-indigo-500 to-purple-500',
       category: 'Management'
     },
@@ -134,7 +134,7 @@ const ProgramsSection = () => {
       shortDesc: 'Egypt\'s first accredited program with dual UK and Finland certification.',
       duration: '3-4 months',
       level: 'All Levels',
-      image: '/placeholder-food.jpg',
+      image: '/programs/food safety.jpeg',
       color: 'from-green-600 to-teal-600',
       category: 'Health & Safety'
     },
@@ -154,7 +154,7 @@ const ProgramsSection = () => {
       shortDesc: 'Master vendor relationships and drive optimal business outcomes through strategic management.',
       duration: '4-6 months',
       level: 'Intermediate',
-      image: '/placeholder-vendor.jpg',
+      image: '/programs/vendor management.jpeg',
       color: 'from-emerald-500 to-teal-500',
       category: 'Management'
     },
@@ -174,7 +174,7 @@ const ProgramsSection = () => {
       shortDesc: 'Essential financial knowledge and skills for non-financial professionals.',
       duration: '4-6 months',
       level: 'Beginner to Intermediate',
-      image: '/placeholder-finance.jpg',
+      image: '/programs/finance for non finance.jpeg',
       color: 'from-green-700 to-emerald-700',
       category: 'Finance'
     },
@@ -184,7 +184,7 @@ const ProgramsSection = () => {
       shortDesc: 'Explore business strategy and technological innovation in financial services.',
       duration: '6-8 months',
       level: 'Advanced',
-      image: '/placeholder-digital-finance.jpg',
+      image: '/programs/digital transformation.jpeg',
       color: 'from-blue-700 to-cyan-700',
       category: 'Technology'
     },
@@ -194,7 +194,7 @@ const ProgramsSection = () => {
       shortDesc: 'Lead sustainable operations and transform hospitality organizations into purpose-driven enterprises.',
       duration: '5-6 months',
       level: 'All Levels',
-      image: '/placeholder-hospitality.jpg',
+      image: '/programs/sustainablity.jpeg',
       color: 'from-green-500 to-lime-500',
       category: 'Hospitality'
     }

@@ -59,10 +59,16 @@ export const metadata: Metadata = {
     siteName: 'Signature Academy',
     images: [
       {
-        url: '/logo.png',
+        url: '/social-images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Signature Academy Logo',
+      },
+      {
+        url: '/social-images/og-image-square.png',
+        width: 800,
+        height: 800,
+        alt: 'Signature Academy Logo Square',
       },
     ],
     locale: 'en_US',
@@ -72,8 +78,16 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Signature Academy - International Training Academy",
     description: "Empowering Tomorrow's Leaders, Today. World-class education rooted in values, creativity, and innovation.",
-    images: ['/logo.png'],
+    images: [
+      {
+        url: '/social-images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Signature Academy Logo',
+      }
+    ],
     creator: '@signatureacademy',
+    site: '@signatureacademy',
   },
   robots: {
     index: true,
@@ -120,8 +134,8 @@ export default function RootLayout({
     alternateName: 'International Training Academy',
     description: 'Empowering Tomorrow\'s Leaders, Today. World-class education rooted in values, creativity, and innovation.',
     url: 'https://signatureacademy.com',
-    logo: 'https://signatureacademy.com/logo.png',
-    image: 'https://signatureacademy.com/logo.png',
+    logo: 'https://signatureacademy.com/social-images/og-image.png',
+    image: 'https://signatureacademy.com/social-images/og-image.png',
     telephone: '+20 12 75444617',
     email: 'signatureacademy30@gmail.com',
     address: {
@@ -167,6 +181,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+        {/* Facebook Open Graph additional tags */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        
+        {/* Twitter Card additional tags */}
+        <meta name="twitter:image:alt" content="Signature Academy Logo" />
+        
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

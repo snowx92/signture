@@ -15,7 +15,9 @@ const AnnounceBar: React.FC = () => {
           {/* Contact Information */}
           <div className="flex flex-row items-center gap-3 sm:gap-4 lg:gap-6">
             <div className={`flex items-center gap-2 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
-              <Phone className="w-4 h-4 text-blue-400" />
+              <a href="tel:+201275444617" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                <Phone className="w-4 h-4" />
+              </a>
               <a 
                 href="tel:+201275444617"
                 className="hover:text-blue-400 transition-colors duration-200 hidden sm:inline"
@@ -26,7 +28,9 @@ const AnnounceBar: React.FC = () => {
             </div>
             
             <div className={`flex items-center gap-2 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
-              <Mail className="w-4 h-4 text-blue-400" />
+              <a href="mailto:signatureacademy30@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                <Mail className="w-4 h-4" />
+              </a>
               <a 
                 href="mailto:signatureacademy30@gmail.com"
                 className="hover:text-blue-400 transition-colors duration-200 hidden sm:inline"
@@ -37,7 +41,14 @@ const AnnounceBar: React.FC = () => {
             </div>
             
             <div className={`flex items-center gap-2 ${direction === 'rtl' ? 'flex-row-reverse' : ''}`}>
-              <MapPin className="w-4 h-4 text-blue-400" />
+              <a 
+                href="https://www.google.com/maps/place//@30.1065521,31.3401985,17z/data=!4m6!1m5!3m4!2zMzDCsDA2JzIzLjYiTiAzMcKwMjAnMzQuMCJF!8m2!3d30.1065521!4d31.3427734?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
+              >
+                <MapPin className="w-4 h-4" />
+              </a>
               <a 
                 href="https://www.google.com/maps/place//@30.1065521,31.3401985,17z/data=!4m6!1m5!3m4!2zMzDCsDA2JzIzLjYiTiAzMcKwMjAnMzQuMCJF!8m2!3d30.1065521!4d31.3427734?hl=en&entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"

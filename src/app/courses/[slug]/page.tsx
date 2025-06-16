@@ -215,7 +215,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'The Diploma in Human Resources offers a comprehensive understanding of key HR functions, processes, and emerging technologies shaping the modern workplace. This program is designed to enhance both personal and professional competencies through skill-based modules focused on communication, critical thinking, and effective decision-making.\n\nParticipants will gain experience in applying research and data analysis techniques, drawing on academic literature, industry reports, and case studies to inform strategic HR practices. The curriculum enables learners to build and strengthen capabilities across core HR domains, aligned with individual career goals and organizational needs.\n\nIdeal for current HR professionals seeking to expand their expertise, the program is also well-suited for individuals looking to transition into the HR field from related or unrelated disciplines.',
     duration: '6-9 months',
     level: 'All Levels',
-    image: '/placeholder-hr.jpg',
+    image: '/programs/HR.jpeg',
     color: 'from-indigo-500 to-purple-500',
     category: 'Management',
     highlights: [
@@ -370,7 +370,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'Egypt\'s First Accredited Food Safety and Hygiene Diploma. Are you seeking a globally recognized certification in Food Safety and Hygiene? Now is your opportunity to enroll in a comprehensive diploma program led by Dr. Tarek Issa—an esteemed expert and consultant with over 30 years of industry experience and more than 15,000 hours of professional training.\n\nThis diploma is designed to equip you with the critical knowledge and skills to advance your career in food safety and hygiene. The program features 65 hours of in-depth, practical training with dual accreditation from the UK and Finland, certified trainer accredited by the Ministry of Manpower, and recognized expert in international cooperation protocols.',
     duration: '3-4 months',
     level: 'All Levels',
-    image: '/placeholder-food.jpg',
+    image: '/programs/food safety.jpeg',
     color: 'from-green-600 to-teal-600',
     category: 'Health & Safety',
     accreditation: 'UK and Finland Dual Accreditation',
@@ -433,7 +433,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'This Vendor Management Diploma is designed to equip professionals with the knowledge and skills required to effectively manage vendor relationships and drive optimal business outcomes. Participants will gain a thorough understanding of the procurement lifecycle, with a focus on the three foundational pillars of successful vendor management: commitments, relationships, and performance metrics.\n\nThe curriculum covers essential topics including fundamental concepts of vendor management, the strategic importance of fostering positive vendor and partner relationships within organizations, criteria for vendor selection and evaluation, proven strategies for developing and maintaining mutually beneficial partnerships, the role and implementation of Service Level Agreements (SLAs), and effective communication techniques for engaging with vendors and service providers.',
     duration: '4-6 months',
     level: 'Intermediate',
-    image: '/placeholder-vendor.jpg',
+    image: '/programs/vendor management.jpeg',
     color: 'from-emerald-500 to-teal-500',
     category: 'Management',
     highlights: [
@@ -495,7 +495,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'This diploma is designed to equip non-financial professionals, particularly middle managers within small and medium-sized enterprises (SMEs), with essential financial knowledge and skills. Through a blend of conceptual instruction, practical exercises, and case study analysis, participants will gain a solid foundation in key financial principles and tools relevant to their managerial roles.\n\nThe program covers fundamental financial literacy through real-world case studies, a comprehensive understanding of how financial processes underpin business operations, in-depth analysis and interpretation of financial statements, skills to actively contribute to enhancing the financial performance of their organization, insight into critical financial performance metrics and their implications, and the ability to participate effectively in financial planning and assess the feasibility of financial initiatives.',
     duration: '4-6 months',
     level: 'Beginner to Intermediate',
-    image: '/placeholder-finance.jpg',
+    image: '/programs/finance for non finance.jpeg',
     color: 'from-green-700 to-emerald-700',
     category: 'Finance',
     highlights: [
@@ -526,7 +526,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'This diploma provides an in-depth exploration of the intersection between business strategy and technological innovation within the financial services sector. The program focuses on the selection and seamless implementation of Information Systems (IS) and Enterprise Resource Planning (ERP) solutions, alongside the development of performance monitoring frameworks to support informed decision-making and corrective action.\n\nKey areas of study include strategic planning and implementation tailored to both large corporations and start-ups, comprehensive analysis of emerging technologies transforming the financial services industry, criteria and best practices for selecting appropriate IS and ERP systems, and designing and utilizing key performance reports to effectively monitor and enhance organizational performance.',
     duration: '6-8 months',
     level: 'Advanced',
-    image: '/placeholder-digital-finance.jpg',
+    image: '/programs/digital transformation.jpeg',
     color: 'from-blue-700 to-cyan-700',
     category: 'Technology',
     highlights: [
@@ -557,7 +557,7 @@ const coursesData: { [key: string]: CourseData } = {
     fullDescription: 'This diploma is designed to equip hospitality professionals with the knowledge and skills necessary to lead sustainable operations and transform their organizations into purpose-driven enterprises. The program emphasizes creating sustainable destinations, enhancing investor engagement, and integrating sustainability across all facets of hospitality management.\n\nKey areas of focus include sustainable practices in food and beverage, housekeeping, procurement, policy development, data monitoring and measurement, building operations, health and wellness, eco-friendly sales and marketing, and stakeholder engagement strategies. Participants will gain a comprehensive understanding of how the hospitality industry contributes to the United Nations Sustainable Development Goals (SDGs) and learn pathways to achieve eco-certifications that reinforce sustainability commitments.\n\nThe program uses a hybrid training format with 40 hours of interactive learning sessions, real-world case studies, and insights from industry guest speakers.',
     duration: '5-6 months',
     level: 'All Levels',
-    image: '/placeholder-hospitality.jpg',
+    image: '/programs/sustainablity.jpeg',
     color: 'from-green-500 to-lime-500',
     category: 'Hospitality',
     highlights: [

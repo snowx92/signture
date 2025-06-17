@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Clock, ArrowRight, Award } from 'lucide-react';
+import {  ArrowRight, Award } from 'lucide-react';
 import { useLanguage } from './ClientIntlProvider';
 import Message from './Message';
 import Link from 'next/link';

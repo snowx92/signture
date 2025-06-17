@@ -28,6 +28,67 @@ const ProgramsSection = () => {
       color: 'from-purple-500 to-indigo-500',
       category: 'Leadership'
     },
+
+    {
+      id: 'psychometrics',
+      title: 'Psychometrics Diploma',
+      shortDesc: 'Qualify to use psychometric tools professionally according to international standards in psychological diagnosis.',
+      duration: '4-6 months',
+      level: 'Intermediate',
+      image: '/programs/Psychological measures.jpeg',
+      color: 'from-blue-400 to-indigo-600',
+      category: 'Special Education'
+    },
+    {
+      id: 'behavior-modification',
+      title: 'Behavior Modification Diploma',
+      shortDesc: 'Learn to analyze human behavior patterns and apply effective behavior modification strategies based on behavioral psychology.',
+      duration: '3-5 months',
+      level: 'All Levels',
+      image: '/programs/motivational.jpeg',
+      color: 'from-green-400 to-teal-500',
+      category: 'Special Education'
+    },
+    {
+      id: 'learning-difficulties',
+      title: 'Learning Difficulties Diploma',
+      shortDesc: 'Understand, diagnose, and treat learning difficulties in children and adolescents using scientific methods and approved tools.',
+      duration: '4-6 months',
+      level: 'Intermediate',
+      image: '/programs/Learning difficulties.jpeg',
+      color: 'from-orange-400 to-red-500',
+      category: 'Special Education'
+    },
+    {
+      id: 'montessori',
+      title: 'Montessori Diploma',
+      shortDesc: 'Implement the Montessori methodology in early childhood education following Dr. Maria Montessori\'s philosophy of child development.',
+      duration: '3-6 months',
+      level: 'All Levels',
+      image: '/programs/Montessori.jpeg',
+      color: 'from-pink-400 to-rose-500',
+      category: 'Special Education'
+    },
+    {
+      id: 'family-counseling',
+      title: 'Family Educational Psychological Counseling',
+      shortDesc: 'Gain skills in psychological counseling integrating psychological, educational, and family aspects for comprehensive support.',
+      duration: '4-6 months',
+      level: 'Intermediate',
+      image: '/programs/Family educational psychological counseling.jpeg',
+      color: 'from-purple-400 to-violet-600',
+      category: 'Special Education'
+    },
+    {
+      id: 'occupational-safety',
+      title: 'Occupational Safety and Crisis Management',
+      shortDesc: 'Learn to apply safety standards in work environments and efficiently handle emergencies to protect lives and property.',
+      duration: '3-4 months',
+      level: 'All Levels',
+      image: '/programs/Training Program in Occupational Safety and Security and Crisis Management.jpeg',
+      color: 'from-yellow-500 to-amber-600',
+      category: 'Special Education'
+    },
     {
       id: 'branding-diploma',
       title: 'Branding Diploma',
@@ -212,7 +273,8 @@ const ProgramsSection = () => {
     { key: 'finance', labelId: 'programs.categories.finance', fallback: 'Finance' },
     { key: 'health-safety', labelId: 'programs.categories.healthSafety', fallback: 'Health & Safety' },
     { key: 'digital-business', labelId: 'programs.categories.digitalBusiness', fallback: 'Digital Business' },
-    { key: 'hospitality', labelId: 'programs.categories.hospitality', fallback: 'Hospitality' }
+    { key: 'hospitality', labelId: 'programs.categories.hospitality', fallback: 'Hospitality' },
+    { key: 'special-education', labelId: 'programs.categories.specialEducation', fallback: 'Special Education' }
   ];
   const [selectedCategory, setSelectedCategory] = React.useState('all');
 
@@ -230,7 +292,8 @@ const ProgramsSection = () => {
           'finance': 'Finance',
           'health-safety': 'Health & Safety',
           'digital-business': 'Digital Business',
-          'hospitality': 'Hospitality'
+          'hospitality': 'Hospitality',
+          'special-education': 'Special Education'
         };
         return program.category === categoryMap[selectedCategory];
       });
@@ -296,12 +359,7 @@ const ProgramsSection = () => {
                   </p>
                   
                   <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span className="text-sm text-gray-600">
-                        <Message id={`programs.${program.id}.duration`} fallback={program.duration} />
-                      </span>
-                    </div>
+
                     <div className="flex items-center space-x-2">
                       <Award className="w-4 h-4 text-green-500" />
                       <span className="text-sm text-gray-600">

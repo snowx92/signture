@@ -320,6 +320,7 @@ const messagesEn = {
   'programs.categories.healthSafety': 'Health & Safety',
   'programs.categories.digitalBusiness': 'Digital Business',
   'programs.categories.hospitality': 'Hospitality',
+  'programs.categories.specialEducation': 'Special Education',
   'programs.certified': 'Certified',
   'programs.viewDetails': 'View Details',
 
@@ -378,6 +379,41 @@ const messagesEn = {
   'programs.sustainable-hospitality.title': 'Sustainable Hospitality Diploma',
   'programs.sustainable-hospitality.desc': 'Lead sustainable operations and transform hospitality organizations into purpose-driven enterprises.',
   'programs.sustainable-hospitality.duration': '5-6 months',
+  'programs.special-education.title': 'Special Education',
+  'programs.special-education.desc': 'Develop essential skills for working with children with special needs and creating inclusive learning environments.',
+  'programs.special-education.duration': '6-9 months',
+  'programs.special-education.level': 'All Levels',
+  
+  // New Special Education Programs
+  'programs.psychometrics.title': 'Psychometrics Diploma',
+  'programs.psychometrics.desc': 'Qualify to use psychometric tools professionally according to international standards in psychological diagnosis.',
+  'programs.psychometrics.duration': '4-6 months',
+  'programs.psychometrics.level': 'Intermediate',
+  
+  'programs.behavior-modification.title': 'Behavior Modification Diploma',
+  'programs.behavior-modification.desc': 'Learn to analyze human behavior patterns and apply effective behavior modification strategies based on behavioral psychology.',
+  'programs.behavior-modification.duration': '3-5 months',
+  'programs.behavior-modification.level': 'All Levels',
+  
+  'programs.learning-difficulties.title': 'Learning Difficulties Diploma',
+  'programs.learning-difficulties.desc': 'Understand, diagnose, and treat learning difficulties in children and adolescents using scientific methods and approved tools.',
+  'programs.learning-difficulties.duration': '4-6 months',
+  'programs.learning-difficulties.level': 'Intermediate',
+  
+  'programs.montessori.title': 'Montessori Diploma',
+  'programs.montessori.desc': 'Implement the Montessori methodology in early childhood education following Dr. Maria Montessori\'s philosophy of child development.',
+  'programs.montessori.duration': '3-6 months',
+  'programs.montessori.level': 'All Levels',
+  
+  'programs.family-counseling.title': 'Family Educational Psychological Counseling',
+  'programs.family-counseling.desc': 'Gain skills in psychological counseling integrating psychological, educational, and family aspects for comprehensive support.',
+  'programs.family-counseling.duration': '4-6 months',
+  'programs.family-counseling.level': 'Intermediate',
+  
+  'programs.occupational-safety.title': 'Occupational Safety and Crisis Management',
+  'programs.occupational-safety.desc': 'Learn to apply safety standards in work environments and efficiently handle emergencies to protect lives and property.',
+  'programs.occupational-safety.duration': '3-4 months',
+  'programs.occupational-safety.level': 'All Levels',
 
   // Course Page
   'course.notFound': 'Course Not Found',
@@ -773,6 +809,7 @@ const messagesAr = {
   'programs.categories.healthSafety': 'الصحة والسلامة',
   'programs.categories.digitalBusiness': 'الأعمال الرقمية',
   'programs.categories.hospitality': 'الضيافة',
+  'programs.categories.specialEducation': 'التربية الخاصة',
   'programs.certified': 'معتمد',
   'programs.viewDetails': 'عرض التفاصيل',
 
@@ -831,6 +868,41 @@ const messagesAr = {
   'programs.sustainable-hospitality.title': 'دبلوم الضيافة المستدامة',
   'programs.sustainable-hospitality.desc': 'قيادة العمليات المستدامة وتحويل مؤسسات الضيافة إلى مؤسسات تدفعها الغاية.',
   'programs.sustainable-hospitality.duration': '5-6 أشهر',
+  'programs.special-education.title': 'التربية الخاصة',
+  'programs.special-education.desc': 'تطوير المهارات الأساسية للعمل مع الأطفال ذوي الاحتياجات الخاصة وخلق بيئات تعليمية شاملة.',
+  'programs.special-education.duration': '6-9 أشهر',
+  'programs.special-education.level': 'جميع المستويات',
+  
+  // New Special Education Programs
+  'programs.psychometrics.title': 'دبلوم القياس النفسي',
+  'programs.psychometrics.desc': 'التأهل لاستخدام أدوات القياس النفسي بشكل احترافي وفقًا للمعايير الدولية في التشخيص النفسي.',
+  'programs.psychometrics.duration': '4-6 أشهر',
+  'programs.psychometrics.level': 'متوسط',
+  
+  'programs.behavior-modification.title': 'دبلوم تعديل السلوك',
+  'programs.behavior-modification.desc': 'تعلم تحليل أنماط السلوك البشري وتطبيق استراتيجيات فعالة لتعديل السلوك استنادًا إلى علم النفس السلوكي.',
+  'programs.behavior-modification.duration': '3-5 أشهر',
+  'programs.behavior-modification.level': 'جميع المستويات',
+  
+  'programs.learning-difficulties.title': 'دبلوم صعوبات التعلم',
+  'programs.learning-difficulties.desc': 'فهم وتشخيص وعلاج صعوبات التعلم لدى الأطفال والمراهقين باستخدام الطرق العلمية والأدوات المعتمدة.',
+  'programs.learning-difficulties.duration': '4-6 أشهر',
+  'programs.learning-difficulties.level': 'متوسط',
+  
+  'programs.montessori.title': 'دبلوم مونتيسوري',
+  'programs.montessori.desc': 'تطبيق منهجية مونتيسوري في تعليم الطفولة المبكرة اتباعًا لفلسفة الدكتورة ماريا مونتيسوري في تنمية الطفل.',
+  'programs.montessori.duration': '3-6 أشهر',
+  'programs.montessori.level': 'جميع المستويات',
+  
+  'programs.family-counseling.title': 'الإرشاد النفسي التربوي الأسري',
+  'programs.family-counseling.desc': 'اكتساب مهارات في الإرشاد النفسي الذي يدمج الجوانب النفسية والتعليمية والأسرية للدعم الشامل.',
+  'programs.family-counseling.duration': '4-6 أشهر',
+  'programs.family-counseling.level': 'متوسط',
+  
+  'programs.occupational-safety.title': 'السلامة المهنية وإدارة الأزمات',
+  'programs.occupational-safety.desc': 'تعلم تطبيق معايير السلامة في بيئات العمل والتعامل بكفاءة مع حالات الطوارئ لحماية الأرواح والممتلكات.',
+  'programs.occupational-safety.duration': '3-4 أشهر',
+  'programs.occupational-safety.level': 'جميع المستويات',
 
   // Course Page
   'course.notFound': 'الدورة غير موجودة',

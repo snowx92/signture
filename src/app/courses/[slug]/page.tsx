@@ -581,6 +581,210 @@ const coursesData: { [key: string]: CourseData } = {
     certification: 'Sustainable Hospitality Management Diploma',
     rating: 4.9,
     students: 890,
+  },
+  'psychometrics': {
+    id: 'psychometrics',
+    title: 'Psychometrics Diploma',
+    fullDescription: 'The Psychometrics Diploma is a specialized training program that aims to qualify participants to use psychometric tools professionally, according to internationally recognized standards in psychological diagnosis. This diploma has been carefully designed to combine in-depth theory with intensive practical application, ensuring trainees are able to interpret results and prepare psychological reports with high accuracy and professionalism.\n\nThe program covers a group of the most popular psychological scales used to assess mental abilities, psychological disorders, and behavioral aspects, with a focus on practical training on how to apply these tools in real-world situations.\n\nThe diploma is suitable for psychologists, students and graduates of psychology and education colleges, and anyone seeking to develop their skills in the field of psychological measurement and diagnosis. At the end of the program, participants receive an accredited certificate demonstrating their proficiency in using psychometric tools, opening up broad career prospects in the fields of mental health, education, and behavioral support.',
+    highlights: [
+      'Professional use of psychometric tools',
+      'Interpretation of psychological test results',
+      'Preparation of accurate psychological reports',
+      'Assessment of mental abilities and disorders',
+      'Practical application in real-world situations'
+    ],
+    curriculum: [
+      'Introduction to Psychometrics',
+      'Psychological Testing Standards',
+      'Mental Abilities Assessment Tools',
+      'Personality Assessment Scales',
+      'Behavioral and Emotional Assessment',
+      'Report Writing and Interpretation',
+      'Ethical Considerations in Psychological Testing',
+      'Practical Applications and Case Studies'
+    ],
+    prerequisites: [
+      'Background in psychology or education helpful but not required',
+      'Interest in psychological assessment and measurement'
+    ],
+    certification: 'Professional Psychometrics Diploma',
+    image: '/programs/Psychological measures.jpeg',
+    level: 'Intermediate',
+    duration: '4-6 months',
+    category: 'Special Education',
+    color: 'from-blue-400 to-indigo-600',
+    rating: 4.7,
+    students: 850
+  },
+  'behavior-modification': {
+    id: 'behavior-modification',
+    title: 'Behavior Modification Diploma',
+    fullDescription: 'The Behavior Modification Diploma is a specialized professional training program that aims to enable participants to understand and analyze patterns of human behavior and apply the latest behavior modification strategies using effective scientific and practical methods.\n\nThis diploma is designed to provide trainees with the skills necessary to deal with undesirable behaviors in children, adolescents, and individuals with special needs, using well-studied methods and techniques based on the principles of behavioral psychology.\n\nThe diploma is suitable for psychologists, special education specialists, teachers, parents, and anyone interested in developing their skills in effectively managing human behavior. At the end of the program, the trainee will receive an accredited certificate that qualifies them for practical application in the field of behavior modification, and work in schools, psychological centers, and care institutions.',
+    highlights: [
+      'Understanding human behavior patterns',
+      'Applied behavior analysis techniques',
+      'Designing individual treatment plans',
+      'Strategies of reinforcement and modeling',
+      'Managing challenging behaviors'
+    ],
+    curriculum: [
+      'Principles and Methods of Behavior Modification',
+      'Applied Behavior Analysis (ABA)',
+      'Designing Individual Treatment Plans',
+      'Reinforcement and Punishment Strategies',
+      'Dealing with Aggressive Behaviors',
+      'Managing Attention-Deficit/Hyperactivity Disorder',
+      'Working with Special Needs Cases',
+      'Behavior Modification in Educational Settings'
+    ],
+    prerequisites: [
+      'Interest in behavioral psychology',
+      'Basic understanding of human development'
+    ],
+    certification: 'Professional Behavior Modification Diploma',
+    image: '/programs/motivational.jpeg',
+    level: 'All Levels',
+    duration: '3-5 months',
+    category: 'Special Education',
+    color: 'from-green-400 to-teal-500',
+    rating: 4.6,
+    students: 920
+  },
+  'learning-difficulties': {
+    id: 'learning-difficulties',
+    title: 'Learning Difficulties Diploma',
+    fullDescription: 'The Learning Difficulties Diploma is an integrated training program designed to qualify trainees to understand, diagnose, and treat learning difficulties in children and adolescents, using scientific methods and approved practical tools.\n\nThe program aims to enable participants to differentiate between developmental and academic learning difficulties and design therapeutic educational programs that help improve students\' educational and behavioral performance.\n\nThe diploma is intended for psychologists and educational specialists, teachers, special education specialists, and parents interested in supporting their children academically and behaviorally. At the end of the diploma, the trainee will receive an accredited certificate that qualifies them to work efficiently in schools, educational centers, and psychological and educational support centers.',
+    highlights: [
+      'Diagnosing learning difficulties',
+      'Designing individual treatment plans',
+      'Educational intervention strategies',
+      'Addressing reading and writing difficulties',
+      'Supporting students with learning challenges'
+    ],
+    curriculum: [
+      'Basic Concepts of Learning Difficulties',
+      'Diagnostic and Assessment Skills',
+      'Individual Treatment Plan Design',
+      'Educational Intervention Strategies',
+      'Reading and Writing Difficulties',
+      'Mathematical Learning Challenges',
+      'Attention and Concentration Disorders',
+      'Classroom Accommodations and Support'
+    ],
+    prerequisites: [
+      'Interest in education and learning support',
+      'Basic understanding of child development'
+    ],
+    certification: 'Professional Learning Difficulties Diploma',
+    image: '/programs/Learning difficulties.jpeg',
+    level: 'Intermediate',
+    duration: '4-6 months',
+    category: 'Special Education',
+    color: 'from-orange-400 to-red-500',
+    rating: 4.8,
+    students: 1050
+  },
+  'montessori': {
+    id: 'montessori',
+    title: 'Montessori Diploma',
+    fullDescription: 'The Montessori Diploma is a specialized training program aimed at preparing qualified educational personnel to implement the Montessori methodology in early childhood education, in accordance with the philosophy established by Dr. Maria Montessori, which is based on respecting the child\'s individuality and developing their personal abilities through a stimulating and carefully calibrated educational environment.\n\nThe program focuses on understanding the stages of mental, sensory, and motor development of children and how to use Montessori educational tools to develop their skills in various areas, such as language, mathematics, practical life, and science, in a manner that takes into account individual differences and promotes independence and self-confidence.\n\nThe diploma is intended for teachers, educational specialists, mothers, educators, and anyone interested in early childhood education and development. At the end of the program, the trainee will receive an accredited certificate that qualifies them to work in Montessori nurseries and schools, or to implement the curriculum.',
+    highlights: [
+      'Montessori educational philosophy',
+      'Child-centered learning approaches',
+      'Designing Montessori learning environments',
+      'Sensory, linguistic, and mathematical education',
+      'Supporting child independence and development'
+    ],
+    curriculum: [
+      'Montessori Educational Philosophy',
+      'Child Development Stages',
+      'Designing the Montessori Classroom',
+      'Practical Life Activities',
+      'Sensorial Education Materials',
+      'Language Development Approaches',
+      'Mathematical Concepts in Montessori',
+      'Observation and Assessment Skills'
+    ],
+    prerequisites: [
+      'Interest in early childhood education',
+      'Passion for child-centered learning approaches'
+    ],
+    certification: 'Professional Montessori Education Diploma',
+    image: '/programs/Montessori.jpeg',
+    level: 'All Levels',
+    duration: '3-6 months',
+    category: 'Special Education',
+    color: 'from-pink-400 to-rose-500',
+    rating: 4.9,
+    students: 780
+  },
+  'family-counseling': {
+    id: 'family-counseling',
+    title: 'Family Educational Psychological Counseling',
+    fullDescription: 'The Diploma in Family Educational Psychological Counseling is an integrated training program that aims to qualify trainees to work in the field of psychological counseling from a comprehensive perspective, integrating psychological, educational, and family aspects.\n\nThe program focuses on providing participants with the theoretical knowledge and practical skills necessary to understand the behavior of individuals within family and educational contexts, and to provide psychological and counseling support in a scientific and effective manner.\n\nThe diploma is intended for psychologists, teachers, those interested in education and mental health, and parents seeking a deeper understanding of the psychological and educational needs of families. At the end of the program, the trainee will receive an accredited certificate that qualifies them to work in the fields of psychological, educational, and family counseling, within educational institutions, psychological centers, and social organizations.',
+    highlights: [
+      'Comprehensive counseling approaches',
+      'Understanding family dynamics',
+      'Educational support strategies',
+      'Psychological intervention techniques',
+      'Supporting children and adolescents'
+    ],
+    curriculum: [
+      'Foundations of Psychological Counseling',
+      'Family Dynamics and Relationships',
+      'Educational Counseling Approaches',
+      'Interview and Communication Skills',
+      'Behavior Modification Techniques',
+      'Child and Adolescent Psychology',
+      'Crisis Intervention Strategies',
+      'Ethical Considerations in Counseling'
+    ],
+    prerequisites: [
+      'Interest in psychology and family support',
+      'Basic understanding of human development'
+    ],
+    certification: 'Professional Family Educational Psychological Counseling Diploma',
+    image: '/programs/Family educational psychological counseling.jpeg',
+    level: 'Intermediate',
+    duration: '4-6 months',
+    category: 'Special Education',
+    color: 'from-purple-400 to-violet-600',
+    rating: 4.7,
+    students: 620
+  },
+  'occupational-safety': {
+    id: 'occupational-safety',
+    title: 'Occupational Safety and Crisis Management',
+    fullDescription: 'The Occupational Safety and Security and Crisis Management Training Program aims to prepare personnel capable of applying the highest safety standards in various work environments, efficiently handling incidents and emergencies, and mitigating potential risks to ensure the protection of lives and property and operational continuity.\n\nThe program focuses on building an effective security and safety system within organizations by training participants on prevention, response, and emergency planning procedures, as well as providing them with crisis and disaster management skills in accordance with international standards.\n\nThe program is designed for occupational safety officers in facilities, employees in the industrial, service, and educational sectors, and security supervisors, engineering departments, and emergency departments. Participants will gain the knowledge and skills necessary to create safer work environments and respond effectively to emergencies.',
+    highlights: [
+      'Occupational safety standards implementation',
+      'Risk assessment and management',
+      'Emergency response planning',
+      'Crisis management strategies',
+      'Safety system development'
+    ],
+    curriculum: [
+      'Occupational Safety Concepts',
+      'Risk Assessment and Control',
+      'Evacuation Plans and Procedures',
+      'Fire Safety and Hazardous Materials',
+      'First Aid and Incident Management',
+      'ISO 45001 Safety Management Systems',
+      'Crisis and Disaster Management',
+      'Emergency Communication Strategies'
+    ],
+    prerequisites: [
+      'Interest in safety and security',
+      'Basic understanding of organizational operations'
+    ],
+    certification: 'Professional Occupational Safety and Crisis Management Diploma',
+    image: '/programs/Training Program in Occupational Safety and Security and Crisis Management.jpeg',
+    level: 'All Levels',
+    duration: '3-4 months',
+    category: 'Special Education',
+    color: 'from-yellow-500 to-amber-600',
+    rating: 4.6,
+    students: 890
   }
 };
 

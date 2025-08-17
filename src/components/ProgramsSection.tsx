@@ -18,6 +18,229 @@ const ProgramsSection = () => {
   };
 
   const programs = [
+    // --- Technology & Management Diplomas (Upcoming) ---
+    {
+      id: 'artificial-intelligence-diploma',
+      title: 'Artificial Intelligence Diploma',
+      shortDesc: 'Comprehensive foundation in AI principles, machine learning, and neural networks.',
+      duration: '',
+      level: '',
+      image: '/programs/artificial intelligence.jpg',
+      color: 'from-slate-600 to-gray-600',
+      category: 'Technology',
+      upcoming: true
+    },
+    {
+      id: 'vendor-management-diploma',
+      title: 'Vendor Management Diploma',
+      shortDesc: 'Master vendor relationships and drive optimal business outcomes through strategic management.',
+      duration: '',
+      level: '',
+      image: '/programs/vendor management.jpeg',
+      color: 'from-emerald-500 to-teal-500',
+      category: 'Management',
+      upcoming: true
+    },
+    {
+      id: 'first-100-days-manager',
+      title: 'First 100 Days as a Manager',
+      shortDesc: 'Strategic guidance for professionals transitioning into new leadership roles.',
+      duration: '',
+      level: '',
+      image: '/programs/100 as brand manager.jpg',
+      color: 'from-blue-600 to-indigo-600',
+      category: 'Leadership',
+      upcoming: true
+    },
+    {
+      id: 'finance-non-financial-managers',
+      title: 'Finance for Non-Financial Managers',
+      shortDesc: 'Essential financial knowledge and skills for non-financial professionals.',
+      duration: '',
+      level: '',
+      image: '/programs/finance for non finance.jpeg',
+      color: 'from-green-700 to-emerald-700',
+      category: 'Finance',
+      upcoming: true
+    },
+    {
+      id: 'digital-transformation-financial-services',
+      title: 'Digital Transformation in Financial Services',
+      shortDesc: 'Explore business strategy and technological innovation in financial services.',
+      duration: '',
+      level: '',
+      image: '/programs/digital transformation.jpeg',
+      color: 'from-blue-700 to-cyan-700',
+      category: 'Technology',
+      upcoming: true
+    },
+    {
+      id: 'branding-diploma-upcoming',
+      title: 'Branding Diploma',
+      shortDesc: 'Master the art of building powerful brands through strategic positioning, storytelling, and visual identity.',
+      duration: '',
+      level: '',
+      image: '/programs/branding .jpg',
+      color: 'from-pink-500 to-rose-500',
+      category: 'Marketing',
+      upcoming: true
+    },
+    {
+      id: 'professional-branding-brand-management',
+      title: 'Professional Branding & Brand Management',
+      shortDesc: 'Comprehensive foundation in brand management for beginners and aspiring professionals.',
+      duration: '',
+      level: '',
+      image: '/programs/professional branding diploma.jpg',
+      color: 'from-green-500 to-emerald-500',
+      category: 'Marketing',
+      upcoming: true
+    },
+    {
+      id: 'online-ecommerce-diploma',
+      title: 'Online eCommerce Diploma',
+      shortDesc: 'Master eCommerce platform design, development, and management in today\'s digital marketplace.',
+      duration: '',
+      level: '',
+      image: '/programs/online ecommerce .jpeg',
+      color: 'from-teal-500 to-green-500',
+      category: 'Digital Business',
+      upcoming: true
+    },
+    {
+      id: 'soft-skills-diploma',
+      title: 'Soft Skills Diploma',
+      shortDesc: 'Essential competencies for personal growth and professional effectiveness in any career.',
+      duration: '',
+      level: '',
+      image: '/programs/soft skills.jpg',
+      color: 'from-cyan-500 to-blue-500',
+      category: 'Personal Development',
+      upcoming: true
+    },
+    {
+      id: 'advertising-diploma',
+      title: 'Advertising Diploma',
+      shortDesc: 'Comprehensive understanding of marketing principles with focus on advertising strategies.',
+      duration: '',
+      level: '',
+      image: '/programs/advertisements.jpg',
+      color: 'from-yellow-500 to-orange-500',
+      category: 'Marketing',
+      upcoming: true
+    },
+    {
+      id: 'sustainable-hospitality-diploma',
+      title: 'Sustainable Hospitality Diploma',
+      shortDesc: 'Lead sustainable operations and transform hospitality organizations into purpose-driven enterprises.',
+      duration: '',
+      level: '',
+      image: '/programs/sustainablity.jpeg',
+      color: 'from-green-500 to-lime-500',
+      category: 'Hospitality',
+      upcoming: true
+    },
+    {
+      id: 'kitchen-management',
+      title: 'Kitchen Management',
+      shortDesc: 'Master the essentials of kitchen operations and management.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-yellow-700 to-orange-700',
+      category: 'Hospitality',
+      upcoming: true
+    },
+    {
+      id: 'etiquette-adults',
+      title: 'Etiquette for Adults',
+      shortDesc: 'Learn etiquette and social skills for adults.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-gray-400 to-gray-600',
+      category: 'Personal Development',
+      upcoming: true
+    },
+    {
+      id: 'etiquette-children',
+      title: 'Etiquette for Children',
+      shortDesc: 'Learn etiquette and social skills for children.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-gray-200 to-gray-400',
+      category: 'Personal Development',
+      upcoming: true
+    },
+    {
+      id: 'motivational-skills-upcoming',
+      title: 'Motivational Skills',
+      shortDesc: 'Develop compelling visions and empower teams to achieve their goals through effective motivational strategies.',
+      duration: '',
+      level: '',
+      image: '/programs/soft skills.jpg',
+      color: 'from-purple-500 to-indigo-500',
+      category: 'Leadership',
+      upcoming: true
+    },
+    // --- Language ---
+    {
+      id: 'ielts',
+      title: 'IELTS',
+      shortDesc: 'IELTS preparation course.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-blue-400 to-blue-600',
+      category: 'Language',
+      upcoming: true
+    },
+    {
+      id: 'general-english',
+      title: 'General English',
+      shortDesc: 'General English language course.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-blue-200 to-blue-400',
+      category: 'Language',
+      upcoming: true
+    },
+    {
+      id: 'german-course',
+      title: 'German Course',
+      shortDesc: 'German language course.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-yellow-400 to-yellow-600',
+      category: 'Language',
+      upcoming: true
+    },
+    {
+      id: 'english-course',
+      title: 'English Course',
+      shortDesc: 'English language course.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-blue-300 to-blue-500',
+      category: 'Language',
+      upcoming: true
+    },
+    // --- Education ---
+    {
+      id: 'kindergarten-teacher-preparation',
+      title: 'Kindergarten Teacher Preparation',
+      shortDesc: 'Prepare to become a kindergarten teacher.',
+      duration: '',
+      level: '',
+      image: '',
+      color: 'from-pink-200 to-pink-400',
+      category: 'Education',
+      upcoming: true
+    },
     {
       id: 'motivational-skills',
       title: 'Motivational Skills',
@@ -89,16 +312,7 @@ const ProgramsSection = () => {
       color: 'from-yellow-500 to-amber-600',
       category: 'Special Education'
     },
-    {
-      id: 'branding-diploma',
-      title: 'Branding Diploma',
-      shortDesc: 'Master the art of building powerful brands through strategic positioning, storytelling, and visual identity.',
-      duration: '6-8 months',
-      level: 'Beginner to Advanced',
-      image: '/programs/branding .jpg',
-      color: 'from-pink-500 to-rose-500',
-      category: 'Marketing'
-    },
+  // Removed non-upcoming duplicate for Branding Diploma
     {
       id: 'business-english',
       title: 'Business English Communication',
@@ -109,16 +323,7 @@ const ProgramsSection = () => {
       color: 'from-blue-500 to-cyan-500',
       category: 'Communication'
     },
-    {
-      id: 'professional-branding',
-      title: 'Professional Branding & Brand Management',
-      shortDesc: 'Comprehensive foundation in brand management for beginners and aspiring professionals.',
-      duration: '6-9 months',
-      level: 'Beginner',
-      image: '/programs/professional branding diploma.jpg',
-      color: 'from-green-500 to-emerald-500',
-      category: 'Marketing'
-    },
+  // Removed non-upcoming duplicate for Professional Branding & Brand Management
     {
       id: 'leadership-diploma',
       title: 'Leadership Diploma',
@@ -129,16 +334,7 @@ const ProgramsSection = () => {
       color: 'from-orange-500 to-red-500',
       category: 'Leadership'
     },
-    {
-      id: 'ecommerce-diploma',
-      title: 'Online eCommerce Diploma',
-      shortDesc: 'Master eCommerce platform design, development, and management in today\'s digital marketplace.',
-      duration: '8-12 months',
-      level: 'Advanced',
-      image: '/programs/online ecommerce .jpeg',
-      color: 'from-teal-500 to-green-500',
-      category: 'Digital Business'
-    },
+  // Removed non-upcoming duplicate for Online eCommerce Diploma
     {
       id: 'human-resources',
       title: 'Human Resources Diploma',
@@ -149,16 +345,7 @@ const ProgramsSection = () => {
       color: 'from-indigo-500 to-purple-500',
       category: 'Management'
     },
-    {
-      id: 'soft-skills',
-      title: 'Soft Skills Diploma',
-      shortDesc: 'Essential competencies for personal growth and professional effectiveness in any career.',
-      duration: '4-6 months',
-      level: 'All Levels',
-      image: '/programs/soft skills.jpg',
-      color: 'from-cyan-500 to-blue-500',
-      category: 'Personal Development'
-    },
+  // Removed non-upcoming duplicate for Soft Skills Diploma
     {
       id: 'marketing-diploma',
       title: 'Marketing Diploma',
@@ -169,16 +356,7 @@ const ProgramsSection = () => {
       color: 'from-red-500 to-pink-500',
       category: 'Marketing'
     },
-    {
-      id: 'advertising-diploma',
-      title: 'Advertising Diploma',
-      shortDesc: 'Comprehensive understanding of marketing principles with focus on advertising strategies.',
-      duration: '6-8 months',
-      level: 'Intermediate',
-      image: '/programs/advertisements.jpg',
-      color: 'from-yellow-500 to-orange-500',
-      category: 'Marketing'
-    },
+  // Removed non-upcoming duplicate for Advertising Diploma
     {
       id: 'digital-marketing',
       title: 'Digital Marketing Diploma',
@@ -249,20 +427,14 @@ const ProgramsSection = () => {
       color: 'from-blue-700 to-cyan-700',
       category: 'Technology'
     },
-    {
-      id: 'sustainable-hospitality',
-      title: 'Sustainable Hospitality Diploma',
-      shortDesc: 'Lead sustainable operations and transform hospitality organizations into purpose-driven enterprises.',
-      duration: '5-6 months',
-      level: 'All Levels',
-      image: '/programs/sustainablity.jpeg',
-      color: 'from-green-500 to-lime-500',
-      category: 'Hospitality'
-    }
+  // Removed non-upcoming duplicate for Sustainable Hospitality Diploma
   ];
 
   const categories = [
+    { key: 'active', labelId: 'programs.categories.active', fallback: 'Active Courses' },
     { key: 'all', labelId: 'programs.categories.all', fallback: 'All' },
+    { key: 'language', labelId: 'programs.categories.language', fallback: 'Language' },
+    { key: 'education', labelId: 'programs.categories.education', fallback: 'Education' },
     { key: 'marketing', labelId: 'programs.categories.marketing', fallback: 'Marketing' },
     { key: 'leadership', labelId: 'programs.categories.leadership', fallback: 'Leadership' },
     { key: 'technology', labelId: 'programs.categories.technology', fallback: 'Technology' },
@@ -276,27 +448,43 @@ const ProgramsSection = () => {
     { key: 'hospitality', labelId: 'programs.categories.hospitality', fallback: 'Hospitality' },
     { key: 'special-education', labelId: 'programs.categories.specialEducation', fallback: 'Special Education' }
   ];
-  const [selectedCategory, setSelectedCategory] = React.useState('all');
+  const [selectedCategory, setSelectedCategory] = React.useState('active');
 
-  const filteredPrograms = selectedCategory === 'all' 
-    ? programs 
-    : programs.filter(program => {
-        const categoryMap: Record<string, string> = {
-          'marketing': 'Marketing',
-          'leadership': 'Leadership',
-          'technology': 'Technology',
-          'management': 'Management',
-          'digital-marketing': 'Digital Marketing',
-          'communication': 'Communication',
-          'personal-development': 'Personal Development',
-          'finance': 'Finance',
-          'health-safety': 'Health & Safety',
-          'digital-business': 'Digital Business',
-          'hospitality': 'Hospitality',
-          'special-education': 'Special Education'
-        };
-        return program.category === categoryMap[selectedCategory];
-      });
+  // Remove non-upcoming duplicates for IDs that have an upcoming version
+  const uniquePrograms = programs.filter((program, idx, arr) => {
+    if (!program.upcoming) {
+      // If there is an upcoming version with similar title, skip this one
+      return !arr.some(
+        (p) => p.title === program.title && p.upcoming
+      );
+    }
+    return true;
+  });
+
+  const filteredPrograms =
+    selectedCategory === 'all'
+      ? uniquePrograms
+      : selectedCategory === 'active'
+      ? uniquePrograms.filter((program) => !program.upcoming)
+      : uniquePrograms.filter((program) => {
+          const categoryMap: Record<string, string> = {
+            'marketing': 'Marketing',
+            'leadership': 'Leadership',
+            'technology': 'Technology',
+            'management': 'Management',
+            'digital-marketing': 'Digital Marketing',
+            'communication': 'Communication',
+            'personal-development': 'Personal Development',
+            'finance': 'Finance',
+            'health-safety': 'Health & Safety',
+            'digital-business': 'Digital Business',
+            'hospitality': 'Hospitality',
+            'special-education': 'Special Education',
+            'language': 'Language',
+            'education': 'Education'
+          };
+          return program.category === categoryMap[selectedCategory];
+        });
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -337,17 +525,26 @@ const ProgramsSection = () => {
               className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:scale-105"
             >
                 <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    fill
-                    className="object-cover transition-transform duration-500 hover:scale-110"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = `https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop&crop=center`;
-                    }}
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-br ${program.color} opacity-80`}></div>
+                  {program.image ? (
+                    <Image
+                      src={program.image}
+                      alt={program.title}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-110"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = `https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop&crop=center`;
+                      }}
+                    />
+                  ) : (
+                    <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${program.color} text-white text-2xl font-bold`}>{program.title[0]}</div>
+                  )}
+                  {/* Removed image overlay opacity */}
+                  {program.upcoming && (
+                    <span className="absolute top-3 right-3 px-3 py-1 bg-gradient-to-r from-yellow-400 to-pink-500 text-white text-xs font-bold rounded-full animate-pulse z-10 shadow-lg">
+                      Upcoming Soon
+                    </span>
+                  )}
                 </div>
 
                 <div className="p-6">
@@ -357,9 +554,7 @@ const ProgramsSection = () => {
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     <Message id={`programs.${program.id}.desc`} fallback={program.shortDesc} />
                   </p>
-                  
                   <div className="flex items-center justify-between mb-6">
-
                     <div className="flex items-center space-x-2">
                       <Award className="w-4 h-4 text-green-500" />
                       <span className="text-sm text-gray-600">
@@ -367,16 +562,24 @@ const ProgramsSection = () => {
                       </span>
                     </div>
                   </div>
-
-                  <Link 
-                    href={`/courses/${program.id}`}
-                    className={`w-full flex items-center justify-center space-x-2 bg-gradient-to-r ${program.color} text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300`}
-                  >
-                    <span>
-                      <Message id="programs.viewDetails" fallback="View Details" />
-                    </span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  {program.upcoming ? (
+                    <button
+                      className={`w-full flex items-center justify-center space-x-2 bg-gradient-to-r ${program.color} text-white py-3 rounded-xl font-medium opacity-60 cursor-not-allowed animate-pulse`}
+                      disabled
+                    >
+                      <span>Upcoming Soon</span>
+                    </button>
+                  ) : (
+                    <Link 
+                      href={`/courses/${program.id}`}
+                      className={`w-full flex items-center justify-center space-x-2 bg-gradient-to-r ${program.color} text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300`}
+                    >
+                      <span>
+                        <Message id="programs.viewDetails" fallback="View Details" />
+                      </span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  )}
                 </div>
             </div>
           ))}

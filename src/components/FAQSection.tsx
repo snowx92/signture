@@ -78,7 +78,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+  <section className="py-20 bg-[#f8fbfd] relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full opacity-40">
@@ -91,19 +91,19 @@ const FAQSection = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6 animate-bounce-in">
+    <div className="inline-flex items-center px-4 py-2 bg-[#3791b9]/10 text-[#021982] rounded-full text-sm font-medium mb-6 animate-bounce-in">
             <HelpCircle className="w-4 h-4 mr-2" />
             <Message id="faq.badge" fallback="Frequently Asked Questions" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#021982] mb-6 leading-tight">
             <Message id="faq.title" fallback="Got Questions?" />
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#3791b9] to-[#021982] bg-clip-text text-transparent">
               <Message id="faq.titleHighlight" fallback="We Have Answers" />
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-[#3791b9] max-w-3xl mx-auto leading-relaxed">
             <Message
               id="faq.subtitle"
               fallback="Find answers to the most common questions about our programs, admission process, and services. Can't find what you're looking for? Contact us directly."
@@ -118,16 +118,16 @@ const FAQSection = () => {
               {faqs.map((faq, index) => (
                 <div
                   key={faq.id}
-                  className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
+                  className="bg-white rounded-2xl shadow-lg border border-[#3791b9]/20 overflow-hidden transition-all duration-300 hover:shadow-xl"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className={`w-full px-6 py-6 text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-300 ${
-                      openIndex === index ? "bg-blue-50" : "hover:bg-gray-50"
+                    className={`w-full px-6 py-6 text-left focus:outline-none focus:ring-2 focus:ring-[#3791b9] focus:ring-offset-2 transition-all duration-300 ${
+                      openIndex === index ? "bg-[#3791b9]/10" : "hover:bg-[#3791b9]/5"
                     }`}
                   >
                     <div className="flex items-center justify-between">
-                      <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                      <h3 className="text-lg font-semibold text-[#021982] pr-4">
                         <Message
                           id={`faq.question.${faq.id}`}
                           fallback={faq.question}
@@ -135,9 +135,9 @@ const FAQSection = () => {
                       </h3>
                       <div className="flex-shrink-0">
                         {openIndex === index ? (
-                          <ChevronUp className="w-6 h-6 text-blue-600" />
+                          <ChevronUp className="w-6 h-6 text-[#3791b9]" />
                         ) : (
-                          <ChevronDown className="w-6 h-6 text-gray-400" />
+                          <ChevronDown className="w-6 h-6 text-[#021982]/40" />
                         )}
                       </div>
                     </div>
@@ -151,7 +151,7 @@ const FAQSection = () => {
                     }`}
                   >
                     <div className="px-6 pb-6">
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-[#021982] leading-relaxed">
                         <Message
                           id={`faq.answer.${faq.id}`}
                           fallback={faq.answer}
@@ -167,16 +167,16 @@ const FAQSection = () => {
           {/* Contact Sidebar */}
           <div className="space-y-8">
             {/* Quick Contact Card */}
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="bg-[#021982] rounded-2xl p-8 text-white">
               <div className="text-center mb-6">
-                <MessageCircle className="w-12 h-12 mx-auto mb-4 text-blue-200" />
+                <MessageCircle className="w-12 h-12 mx-auto mb-4 text-[#3791b9]" />
                 <h3 className="text-xl font-bold mb-2">
                   <Message
                     id="faq.contact.title"
                     fallback="Still Have Questions?"
                   />
                 </h3>
-                <p className="text-blue-100 text-sm">
+                <p className="text-[#3791b9] text-sm">
                   <Message
                     id="faq.contact.subtitle"
                     fallback="Our team is here to help you"
@@ -187,16 +187,16 @@ const FAQSection = () => {
               <div className="space-y-4">
                 <a
                   href="tel:+201275444617"
-                  className={`flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300 ${
+                  className={`flex items-center space-x-3 p-3 bg-[#3791b9]/10 rounded-lg hover:bg-[#3791b9]/20 transition-colors duration-300 ${
                     direction === "rtl" ? "space-x-reverse" : ""
                   }`}
                 >
-                  <Phone className="w-5 h-5 text-blue-200" />
+                  <Phone className="w-5 h-5 text-[#3791b9]" />
                   <div>
                     <div className="font-semibold text-sm" dir="ltr">
                       0227757515
                     </div>
-                    <div className="text-blue-200 text-xs">
+                    <div className="text-[#3791b9] text-xs">
                       <Message id="faq.contact.phone" fallback="Call us now" />
                     </div>
                   </div>
@@ -204,16 +204,16 @@ const FAQSection = () => {
 
                 <a
                   href="mailto:info@signatureacademyedu.com"
-                  className={`flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-300 ${
+                  className={`flex items-center space-x-3 p-3 bg-[#3791b9]/10 rounded-lg hover:bg-[#3791b9]/20 transition-colors duration-300 ${
                     direction === "rtl" ? "space-x-reverse" : ""
                   }`}
                 >
-                  <Mail className="w-5 h-5 text-blue-200" />
+                  <Mail className="w-5 h-5 text-[#3791b9]" />
                   <div>
                     <div className="font-semibold text-sm break-all" dir="ltr">
                       info@signatureacademyedu.com
                     </div>
-                    <div className="text-blue-200 text-xs">
+                    <div className="text-[#3791b9] text-xs">
                       <Message
                         id="faq.contact.email"
                         fallback="Send us an email"
@@ -225,15 +225,15 @@ const FAQSection = () => {
             </div>
 
             {/* Quick Tips */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-200">
-              <h3 className="text-lg font-bold text-green-900 mb-4">
+            <div className="bg-[#3791b9]/5 rounded-2xl p-6 border border-[#3791b9]/20">
+              <h3 className="text-lg font-bold text-[#021982] mb-4">
                 <Message id="faq.tips.title" fallback="Quick Tips" />
               </h3>
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-sm text-green-800">
+                  <div className="w-2 h-2 bg-[#3791b9] rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-sm text-[#021982]">
                     <Message
                       id="faq.tips.tip1"
                       fallback="Schedule a free consultation before enrolling"

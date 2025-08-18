@@ -14,7 +14,7 @@ import { useLanguage } from "./ClientIntlProvider";
 import Message from "./Message";
 
 const FeaturesSection = () => {
-  const { direction } = useLanguage();
+  const { direction, language } = useLanguage();
 
   const features = [
     {
@@ -43,10 +43,13 @@ const FeaturesSection = () => {
     },
     {
       icon: Clock,
-      titleId: "features.flexible.title",
-      titleFallback: "Flexible Schedule",
-      descId: "features.flexible.desc",
-      descFallback: "Choose from morning, evening, and weekend classes",
+      titleId: "features.recording.title",
+      titleFallback: language === 'ar' ? "جلسات مسجلة فقط" : "Content Recording Sessions Only",
+      descId: "features.recording.desc",
+      descFallback:
+        language === 'ar'
+          ? "يمكنك الوصول إلى جميع محتويات الدورة من خلال الجلسات المسجلة في أي وقت يناسبك."
+          : "Access all course content through recorded sessions at your convenience.",
       color: "from-[#021982] to-[#3791b9]",
     },
     {

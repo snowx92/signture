@@ -483,30 +483,38 @@ const ProgramsSection = () => {
     return true;
   });
 
-  const filteredPrograms =
-    selectedCategory === "all"
-      ? uniquePrograms
-      : selectedCategory === "active"
-      ? uniquePrograms.filter((program) => !program.upcoming)
-      : uniquePrograms.filter((program) => {
-          const categoryMap: Record<string, string> = {
-            marketing: "Marketing",
-            leadership: "Leadership",
-            technology: "Technology",
-            management: "Management",
-            "digital-marketing": "Digital Marketing",
-            communication: "Communication",
-            "personal-development": "Personal Development",
-            finance: "Finance",
-            "health-safety": "Health & Safety",
-            "digital-business": "Digital Business",
-            hospitality: "Hospitality",
-            "special-education": "Special Education",
-            language: "Language",
-            education: "Education",
-          };
-          return program.category === categoryMap[selectedCategory];
-        });
+  let filteredPrograms = [];
+  if (selectedCategory === "all") {
+    filteredPrograms = uniquePrograms.slice();
+  } else if (selectedCategory === "active") {
+    filteredPrograms = uniquePrograms.filter((program) => !program.upcoming);
+  } else {
+    const categoryMap: Record<string, string> = {
+      marketing: "Marketing",
+      leadership: "Leadership",
+      technology: "Technology",
+      management: "Management",
+      "digital-marketing": "Digital Marketing",
+      communication: "Communication",
+      "personal-development": "Personal Development",
+      finance: "Finance",
+      "health-safety": "Health & Safety",
+      "digital-business": "Digital Business",
+      hospitality: "Hospitality",
+      "special-education": "Special Education",
+      language: "Language",
+      education: "Education",
+    };
+    filteredPrograms = uniquePrograms.filter(
+      (program) => program.category === categoryMap[selectedCategory]
+    );
+  }
+
+  // Always show active (non-upcoming) programs first
+  filteredPrograms = filteredPrograms.sort((a, b) => {
+    if (a.upcoming === b.upcoming) return 0;
+    return a.upcoming ? 1 : -1;
+  });
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
@@ -547,7 +555,7 @@ const ProgramsSection = () => {
           {filteredPrograms.map((program) => (
             <div
               key={program.id}
-              className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:scale-105"
+              className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:scale-105 flex flex-col min-h-[500px]"
             >
               <div className="relative h-48 overflow-hidden">
                 {program.image ? (
@@ -576,7 +584,7 @@ const ProgramsSection = () => {
                 )}
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   <Message
                     id={`programs.${program.id}.title`}
@@ -597,27 +605,33 @@ const ProgramsSection = () => {
                     </span>
                   </div>
                 </div>
-                {program.upcoming ? (
-                  <button
-                    className={`w-full flex items-center justify-center space-x-2 bg-gradient-to-r ${program.color} text-white py-3 rounded-xl font-medium opacity-60 cursor-not-allowed animate-pulse`}
-                    disabled
-                  >
-                    <span>Upcoming Soon</span>
-                  </button>
-                ) : (
-                  <Link
-                    href={`/courses/${program.id}`}
-                    className={`w-full flex items-center justify-center space-x-2 bg-gradient-to-r ${program.color} text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300`}
-                  >
-                    <span>
-                      <Message
-                        id="programs.viewDetails"
-                        fallback="View Details"
-                      />
-                    </span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                )}
+                <div className="mt-auto">
+                  {program.upcoming ? (
+                    <button
+                      className={
+                        "w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-[#3791b9] to-[#021982] text-white py-3 rounded-xl font-medium opacity-60 cursor-not-allowed animate-pulse"
+                      }
+                      disabled
+                    >
+                      <span>Upcoming Soon</span>
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/courses/${program.id}`}
+                      className={
+                        "w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-[#3791b9] to-[#021982] text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all duration-300"
+                      }
+                    >
+                      <span>
+                        <Message
+                          id="programs.viewDetails"
+                          fallback="View Details"
+                        />
+                      </span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}

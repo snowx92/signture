@@ -20,7 +20,7 @@ const HeroSection = () => {
           quality={90}
         />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
       {/* Hero Content */}
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white opacity-90">
                 <Message id="hero.welcome" fallback="Welcome to" />{" "}
-                <span className="bg-gradient-to-r from-[#3791b9] to-[#021982] bg-clip-text text-transparent">
+                <span className="text-[#3791b9]">
                   <Message id="hero.brandName" fallback="Signature Academy" />
                 </span>
               </h1>

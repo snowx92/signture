@@ -1,43 +1,16 @@
-"use client";
-
-
 import Image from "next/image";
 import Message from "./Message";
-import { useRef, useEffect } from "react";
 
+// Add Ain Shams logo to public/partners/ainshams.png or use a static import if needed
 const partnerLogos = [
   { src: "/partners/ISS_GERMANY_page-0001-removebg-preview.png", alt: "ISS Germany" },
   { src: "/partners/National_Quality_Institute.png", alt: "National Quality Institute" },
   { src: "/partners/EKAASALARAB.png", alt: "EKAASALARAB" },
   { src: "/partners/cinpaa.png", alt: "CINPAA" },
-  { src: "/partners/ain-shames.png", alt: "Ain Shams University" },
+  { src: "/partners/ainshams.png", alt: "Ain Shams University" }, // New logo
 ];
 
 const PartnersSection = () => {
-  const marqueeRef = useRef<HTMLDivElement>(null);
-  const animationDuration = 30; // seconds
-
-  useEffect(() => {
-    const marquee = marqueeRef.current;
-    if (!marquee) return;
-    let start: number | null = null;
-    let req: number;
-    const width = marquee.scrollWidth / 2;
-    const step = (timestamp: number) => {
-      if (start === null) start = timestamp;
-      const progress = ((timestamp - start) / 1000) % animationDuration;
-      const percent = progress / animationDuration;
-      marquee.scrollLeft = width * percent;
-      req = requestAnimationFrame(step);
-      if (marquee.scrollLeft >= width) {
-        marquee.scrollLeft = 0;
-        start = timestamp;
-      }
-    };
-    req = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(req);
-  }, []);
-
   return (
     <section className="py-20 bg-[#f8fbfd] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,22 +32,17 @@ const PartnersSection = () => {
             />
           </p>
         </div>
-        {/* Circular animated logos row */}
-        <div className="relative w-full overflow-x-hidden select-none">
-          <div
-            ref={marqueeRef}
-            className="flex items-center gap-8 md:gap-16 whitespace-nowrap overflow-x-scroll scrollbar-hide"
-            style={{ scrollBehavior: 'auto' }}
-          >
-            {[...partnerLogos, ...partnerLogos].map((logo, idx) => (
-              <div key={idx} className="flex-shrink-0 w-28 md:w-40 h-20 md:h-28 flex items-center justify-center">
+        {/* Animated logos row */}
+        <div className="relative w-full overflow-x-hidden">
+          <div className="flex items-center gap-16 animate-partners-scroll whitespace-nowrap">
+            {partnerLogos.concat(partnerLogos).map((logo, idx) => (
+              <div key={idx} className="flex-shrink-0 w-40 h-28 flex items-center justify-center">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={112}
-                  height={80}
+                  width={160}
+                  height={90}
                   className="object-contain drop-shadow-md"
-                  style={{ maxHeight: '100%', maxWidth: '100%' }}
                 />
               </div>
             ))}
@@ -82,13 +50,12 @@ const PartnersSection = () => {
         </div>
       </div>
       <style jsx>{`
-        /* Hide scrollbar for all browsers */
-        .scrollbar-hide {
-          -ms-overflow-style: none; /* IE and Edge */
-          scrollbar-width: none; /* Firefox */
+        @keyframes partners-scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none; /* Chrome, Safari, Opera */
+        .animate-partners-scroll {
+          animation: partners-scroll 30s linear infinite;
         }
       `}</style>
     </section>

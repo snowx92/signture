@@ -227,7 +227,7 @@ const messagesEn = {
   "partners.stats.programs": "Programs",
   "partners.name.1": "ISS Germany",
   "partners.name.2": "National Quality Institute",
-  "partners.name.3": "Ekaasa Arab",
+  "partners.name.3": "EkasalArab",
   "partners.name.4": "CINPAA",
   "partners.type.1": "International Standards",
   "partners.type.2": "Quality Assurance",
@@ -255,6 +255,7 @@ const messagesEn = {
   "partners.rating": "Partner Rating",
 
   // Certificates Section
+  "certificates.educationHeadline": "Internationally Certified for Educational Excellence",
   "certificates.badge": "Certifications & Awards",
   "certificates.title": "Recognized for",
   "certificates.titleHighlight": "Excellence & Quality",
@@ -636,6 +637,7 @@ const messagesEn = {
 
 // Messages for Arabic
 const messagesAr = {
+  "certificates.educationHeadline": "معتمدون دولياً للتميز في التعليم",
   // Header
   "header.phone": "0227757515",
   "header.email": "info@signatureacademyedu.com",
@@ -785,6 +787,7 @@ const messagesAr = {
   "cta.scheduleVisit": "احجز زيارة",
   "cta.downloadBrochure": "حمل الكتيب",
   "cta.contact.title": "تواصل معنا",
+  "cta.contact.phoneTitle": "اتصل بنا في أي وقت",
   "cta.contact.phone": "اتصل بنا في أي وقت",
   "cta.contact.email": "استجابة سريعة مضمونة",
   "cta.contact.address": "زر حرمنا الجامعي",
@@ -809,6 +812,10 @@ const messagesAr = {
   "cta.startWhatsappConsultation": "ابدأ استشارة واتساب",
   "cta.noCommitment": "لا يوجد التزام مطلوب",
 
+  "cta.joinTeam.title": "انضم إلى فريقنا",
+  "cta.joinTeam.desc": "هل أنت شغوف بالتعليم؟ نحن دائماً نبحث عن معلمين موهوبين للانضمام إلى فريقنا المتنامي.",
+  "cta.joinTeam.button": "استكشف فرص العمل",
+
   // Partners Section
   "partners.badge": "شركاؤنا",
   "partners.title": "موثوق من",
@@ -822,7 +829,7 @@ const messagesAr = {
   "partners.stats.programs": "برنامج",
   "partners.name.1": "آي إس إس ألمانيا",
   "partners.name.2": "معهد الجودة الوطني",
-  "partners.name.3": "إكاسة العرب",
+  "partners.name.3": "إيكاس العرب",
   "partners.name.4": "سينبا",
   "partners.type.1": "المعايير الدولية",
   "partners.type.2": "ضمان الجودة",

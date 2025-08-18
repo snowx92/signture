@@ -54,10 +54,10 @@ const Navbar = () => {
     },
     { href: "/#faqs", labelId: "nav.faqs", fallback: "FAQs", section: "faqs" },
     {
-      href: "/#contact",
+      href: "/#cta",
       labelId: "nav.contact",
       fallback: "Contact",
-      section: "contact",
+      section: "cta",
     },
   ];
 
@@ -116,6 +116,10 @@ const Navbar = () => {
           ? "bg-white/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
+      style={{
+        paddingTop: isScrolled ? '1rem' : undefined,
+        paddingBottom: isScrolled ? '1rem' : undefined
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
@@ -128,11 +132,11 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <Link href="/">
                 <Image
-                  src="/logo.png"
+                  src={isStaticPage || isScrolled ? "/logo.png" : "/logowhite.png"}
                   alt="Signature Academy Logo"
-                  width={80}
-                  height={80}
-                  className="h-12 w-12 lg:h-14 lg:w-14 object-contain transition-all duration-300"
+                  width={180}
+                  height={180}
+                  className="h-24 w-24 sm:h-32 sm:w-32 lg:h-24 lg:w-24 object-contain transition-all duration-300"
                   priority
                 />
               </Link>

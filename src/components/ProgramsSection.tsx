@@ -231,7 +231,7 @@ const ProgramsSection = () => {
       image: "/programs/German course.jpeg",
       color: "from-yellow-400 to-yellow-600",
       category: "Language",
-      upcoming: true,
+      upcoming: false,
     },
     {
       id: "english-course",
@@ -254,7 +254,7 @@ const ProgramsSection = () => {
       image: "/programs/kindergarten teacher preparation .jpeg",
       color: "from-pink-200 to-pink-400",
       category: "Education",
-      upcoming: true,
+      upcoming: false,
     },
 
     {
@@ -299,7 +299,7 @@ const ProgramsSection = () => {
       level: "All Levels",
       image: "/programs/Montessori.jpeg",
       color: "from-pink-400 to-rose-500",
-      category: "Special Education",
+      category: "Education",
     },
     {
       id: "family-counseling",
@@ -323,6 +323,7 @@ const ProgramsSection = () => {
         "/programs/Training Program in Occupational Safety and Security and Crisis Management.jpeg",
       color: "from-yellow-500 to-amber-600",
       category: "Special Education",
+      upcoming: true,
     },
     // Removed non-upcoming duplicate for Branding Diploma
     {
@@ -335,6 +336,7 @@ const ProgramsSection = () => {
       image: "/programs/business english.jpg",
       color: "from-[#3791b9] to-[#021982]",
       category: "Communication",
+      upcoming: true,
     },
     // Removed non-upcoming duplicate for Professional Branding & Brand Management
     {
@@ -347,6 +349,7 @@ const ProgramsSection = () => {
       image: "/programs/leadership.jpg",
       color: "from-orange-500 to-red-500",
       category: "Leadership",
+      upcoming: true,
     },
     // Removed non-upcoming duplicate for Online eCommerce Diploma
     {
@@ -359,6 +362,7 @@ const ProgramsSection = () => {
       image: "/programs/HR.jpeg",
       color: "from-indigo-500 to-purple-500",
       category: "Management",
+      upcoming: true,
     },
     // Removed non-upcoming duplicate for Soft Skills Diploma
     {
@@ -371,6 +375,7 @@ const ProgramsSection = () => {
       image: "/programs/marketing.jpg",
       color: "from-red-500 to-pink-500",
       category: "Marketing",
+      upcoming: true,
     },
     // Removed non-upcoming duplicate for Advertising Diploma
     {
@@ -383,6 +388,7 @@ const ProgramsSection = () => {
       image: "/programs/digital marketing.jpg",
       color: "from-violet-500 to-purple-500",
       category: "Digital Marketing",
+      upcoming: true,
     },
     {
       id: "food-safety",

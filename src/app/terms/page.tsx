@@ -115,7 +115,7 @@ export default function TermsPage() {
               <p>For questions regarding these terms, please contact us:</p>
               <div className="bg-gray-50 rounded-lg p-4 space-y-2">
                 <p>
-                  <strong>Phone:</strong> 0227757515
+                  <strong>Phone:</strong> +20227757515
                 </p>
                 <p>
                   <strong>Email:</strong> info@signatureacademyedu.com

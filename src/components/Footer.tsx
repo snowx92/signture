@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                   dir="ltr"
                 >
-                  0227757515
+                  +20227757515
                 </a>
               </div>
 

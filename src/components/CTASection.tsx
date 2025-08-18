@@ -30,10 +30,10 @@ const CTASection = () => {
                     <Message id="cta.contact.phoneTitle" fallback="Call Us Anytime" />
                   </h3>
                   <button
-                    onClick={() => window.open(`tel:${process.env.NEXT_PUBLIC_PHONE || '0227757515'}`, '_self')}
+                    onClick={() => window.open(`tel:${process.env.NEXT_PUBLIC_PHONE || '+20227757515'}`, '_self')}
                     className="text-[#021982] text-xl font-mono underline underline-offset-4 hover:text-[#3791b9] transition-colors focus:outline-none"
                   >
-                    <Message id="header.phone" fallback="0227757515" />
+                    <Message id="header.phone" fallback="+20227757515" />
                   </button>
                   <p className="text-xs text-[#3791b9] mt-1">
                     <Message id="cta.contact.phone" fallback="Quick response guaranteed" />

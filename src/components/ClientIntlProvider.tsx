@@ -27,8 +27,30 @@ export const useLanguage = () => {
 
 // Messages for English
 const messagesEn = {
+  // Board/Leadership Section
+  "about.board.title": "Inspiring Leadership at Signature Academy",
+  "about.board.content1": "At Signature Academy, we are guided by visionary leaders whose expertise, dedication, and passion for development have shaped a powerful educational model focused on excellence, innovation, and impact. Meet the pioneers behind our success:",
+  "about.board.tarek.title": "Dr. Tarek Issa",
+  "about.board.tarek.role": "Chairman of the Board, Signature Academy",
+  "about.board.tarek.bio": "Dr. Tarek Issa brings over 30 years of experience and more than 25,000 training hours in the fields of food hygiene, safety, and health education. He holds a PhD in Food Hygiene and Safety and is widely respected as a university lecturer and international consultant.",
+  "about.board.tarek.credentials": "Credentials and Affiliations:",
+  "about.board.tarek.cred1": "Chairman of the Board of Directors of:",
+  "about.board.tarek.cred2": "Signature Group",
+  "about.board.tarek.cred3": "Signature Academy",
+  "about.board.tarek.cred4": "Certified Trainer of Trainers (TOT) – Ministry of Manpower",
+  "about.board.tarek.cred5": "Expert in international cooperation protocols",
+  "about.board.tarek.cred6": "Member of the Board of the Arab Federation for New Urban Communities",
+  "about.board.tarek.cred7": "Development and international projects consultant",
+  "about.board.tarek.cred8": "Certified by Highfield – United Kingdom",
+  "about.board.tarek.cred9": "Certified by Haaga Helia – University of Finland",
+  "about.board.tarek.vision": "Dr. Tarek's vision and global expertise continue to strengthen Signature Academy’s position as a leader in specialized education and international collaboration.",
+  "about.board.amal.title": "Dr. Amal Talaat",
+  "about.board.amal.bio": "Signature Academy is a dynamic educational institution founded by Consultant Dr. Amal Talaat, a respected leader in business, media, and development. With a PhD in International Business Administration and decades of experience, Dr. Talaat brings together academic excellence, real-world expertise, and a deep commitment to social impact.",
+  "about.board.amal.impact": "Under her leadership, Signature Academy has become a center for professional development, women's empowerment, and youth training. The academy’s initiatives focus on equipping women in charitable work with skills to mentor local youth and on providing career pathways for foster care graduates and underserved youth, aligning with the UN Sustainable Development Goals.",
+  "about.board.amal.portfolio": "Dr. Talaat’s impressive portfolio includes leadership roles in business, extensive work in international events and training, and the founding of numerous impactful community projects—most notably the initiative “Protect Your Child with Awareness, Not Silence.”",
+  "about.board.amal.vision": "At Signature Academy, education goes beyond the classroom—it's a tool for building futures, transforming communities, and creating lasting change.",
   // Header
-  "header.phone": "0227757515",
+  "header.phone": "+20227757515",
   "header.email": "info@signatureacademyedu.com",
   "header.address":
     "٢ / أأ. عبدالرحمن رشدي الدور الارضي مكتب ١  بجوار مسجد ابو بكر الصديق بجوار قسم النزهه",
@@ -360,7 +382,7 @@ const messagesEn = {
   "footer.links.partners": "Partners",
   "footer.links.certificates": "Certificates",
   "footer.contact.title": "Contact Info",
-  "footer.contact.phone": "0227757515",
+  "footer.contact.phone": "+20227757515",
   "footer.contact.email": "info@signatureacademyedu.com",
   "footer.contact.address":
     "٢ / أأ. عبدالرحمن رشدي الدور الارضي مكتب ١  بجوار مسجد ابو بكر الصديق بجوار قسم النزهه",
@@ -637,9 +659,31 @@ const messagesEn = {
 
 // Messages for Arabic
 const messagesAr = {
+  // Board/Leadership Section
+  "about.board.title": "القيادة الملهمة في سجنتشر أكاديمي",
+  "about.board.content1": "في سجنتشر أكاديمي، يقودنا قادة رؤيويون بخبراتهم وتفانيهم وشغفهم بالتنمية، حيث شكلوا نموذجًا تعليميًا قويًا يركز على التميز والابتكار والتأثير. تعرف على رواد نجاحنا:",
+  "about.board.tarek.title": "د. طارق عيسى",
+  "about.board.tarek.role": "رئيس مجلس الإدارة، سجنتشر أكاديمي",
+  "about.board.tarek.bio": "يتمتع د. طارق عيسى بخبرة تزيد عن 30 عامًا وأكثر من 25,000 ساعة تدريبية في مجالات صحة وسلامة الغذاء والتعليم الصحي. حاصل على دكتوراه في صحة وسلامة الغذاء ويُعد من المحاضرين الجامعيين والاستشاريين الدوليين المرموقين.",
+  "about.board.tarek.credentials": "الاعتمادات والانتماءات:",
+  "about.board.tarek.cred1": "رئيس مجلس إدارة:",
+  "about.board.tarek.cred2": "مجموعة سجنتشر",
+  "about.board.tarek.cred3": "سجنتشر أكاديمي",
+  "about.board.tarek.cred4": "مدرب مدربين معتمد (TOT) – وزارة القوى العاملة",
+  "about.board.tarek.cred5": "خبير في بروتوكولات التعاون الدولي",
+  "about.board.tarek.cred6": "عضو مجلس اتحاد العرب للمجتمعات العمرانية الجديدة",
+  "about.board.tarek.cred7": "استشاري تطوير ومشروعات دولية",
+  "about.board.tarek.cred8": "معتمد من هايفيلد – المملكة المتحدة",
+  "about.board.tarek.cred9": "معتمد من جامعة هاجا هيليا – فنلندا",
+  "about.board.tarek.vision": "تستمر رؤية د. طارق وخبرته العالمية في تعزيز مكانة سجنتشر أكاديمي كقائد في التعليم المتخصص والتعاون الدولي.",
+  "about.board.amal.title": "د. أمل طلعت",
+  "about.board.amal.bio": "سجنتشر أكاديمي هي مؤسسة تعليمية ديناميكية أسستها الاستشارية د. أمل طلعت، وهي قائدة بارزة في الأعمال والإعلام والتنمية. تحمل دكتوراه في إدارة الأعمال الدولية ولديها عقود من الخبرة تجمع بين التميز الأكاديمي والخبرة العملية والالتزام العميق بالتأثير المجتمعي.",
+  "about.board.amal.impact": "تحت قيادتها، أصبحت سجنتشر أكاديمي مركزًا للتطوير المهني وتمكين المرأة وتدريب الشباب. تركز مبادرات الأكاديمية على تمكين النساء في العمل الخيري بمهارات لتوجيه الشباب المحليين، وتوفير مسارات مهنية لخريجي الرعاية البديلة والشباب الأقل حظًا، بما يتماشى مع أهداف التنمية المستدامة للأمم المتحدة.",
+  "about.board.amal.portfolio": "تشمل محفظة د. أمل أدوارًا قيادية في الأعمال، وعملًا واسعًا في الفعاليات والتدريب الدولية، وتأسيس العديد من المشاريع المجتمعية المؤثرة—وأبرزها مبادرة “احمي طفلك بالوعي وليس بالصمت”.",
+  "about.board.amal.vision": "في سجنتشر أكاديمي، يتجاوز التعليم حدود الفصول الدراسية—فهو أداة لبناء المستقبل وتحويل المجتمعات وصناعة التغيير الدائم.",
   "certificates.educationHeadline": "معتمدون دولياً للتميز في التعليم",
   // Header
-  "header.phone": "0227757515",
+  "header.phone": "+20227757515",
   "header.email": "info@signatureacademyedu.com",
   "header.address":
     "٢ / أأ. عبدالرحمن رشدي الدور الارضي مكتب ١  بجوار مسجد ابو بكر الصديق بجوار قسم النزهه",
@@ -956,7 +1000,7 @@ const messagesAr = {
   "footer.links.partners": "الشركاء",
   "footer.links.certificates": "الشهادات",
   "footer.contact.title": "معلومات الاتصال",
-  "footer.contact.phone": "0227757515",
+  "footer.contact.phone": "+20227757515",
   "footer.contact.email": "info@signatureacademyedu.com",
   "footer.contact.address":
     "٢ / أأ. عبدالرحمن رشدي الدور الارضي مكتب ١  بجوار مسجد ابو بكر الصديق بجوار قسم النزهه",

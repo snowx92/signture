@@ -79,24 +79,6 @@ const AboutSection = () => {
 
         {/* Mission & Vision Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {/* Mission Card */}
-          <div className="bg-gradient-to-br from-[#3791b9]/10 to-[#3791b9]/20 rounded-3xl p-8 border border-[#3791b9]/30">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#3791b9] to-[#3791b9] rounded-2xl flex items-center justify-center">
-                <Target className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900">
-                <Message id="about.mission.title" fallback="Our Mission" />
-              </h3>
-            </div>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              <Message
-                id="about.mission.text"
-                fallback="To deliver an unparalleled standard of education that inspires intellectual excellence, cultivates refined creativity, and instills a deep sense of integrity and purpose. At Signature Academy, we shape distinguished global citizens equipped with the wisdom, leadership, and cultural sophistication to make a lasting impact on the world."
-              />
-            </p>
-          </div>
-
           {/* Vision Card */}
           <div className="bg-gradient-to-br from-[#021982]/10 to-[#021982]/20 rounded-3xl p-8 border border-[#021982]/30">
             <div className="flex items-center space-x-4 mb-6">
@@ -111,6 +93,24 @@ const AboutSection = () => {
               <Message
                 id="about.vision.text"
                 fallback="To stand as the world's foremost institution of elite learning, uniting cultures and ideas while setting new benchmarks in academic prestige. We envision a generation of leaders—cultured, visionary, and principled—who shape the future with innovation, grace, and transformative influence."
+              />
+            </p>
+          </div>
+
+          {/* Mission Card */}
+          <div className="bg-gradient-to-br from-[#3791b9]/10 to-[#3791b9]/20 rounded-3xl p-8 border border-[#3791b9]/30">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#3791b9] to-[#3791b9] rounded-2xl flex items-center justify-center">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900">
+                <Message id="about.mission.title" fallback="Our Mission" />
+              </h3>
+            </div>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              <Message
+                id="about.mission.text"
+                fallback="To deliver an unparalleled standard of education that inspires intellectual excellence, cultivates refined creativity, and instills a deep sense of integrity and purpose. At Signature Academy, we shape distinguished global citizens equipped with the wisdom, leadership, and cultural sophistication to make a lasting impact on the world."
               />
             </p>
           </div>

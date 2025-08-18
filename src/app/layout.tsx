@@ -140,7 +140,7 @@ export default function RootLayout({
     url: "https://signatureacademy.com",
     logo: "https://signatureacademy.com/social-images/og-image.png",
     image: "https://signatureacademy.com/social-images/og-image.png",
-    telephone: "0227757515",
+    telephone: "+20227757515",
     email: "info@signatureacademyedu.com",
     address: {
       "@type": "PostalAddress",

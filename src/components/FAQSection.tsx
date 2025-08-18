@@ -194,7 +194,7 @@ const FAQSection = () => {
                   <Phone className="w-5 h-5 text-[#3791b9]" />
                   <div>
                     <div className="font-semibold text-sm" dir="ltr">
-                      0227757515
+                      +20227757515
                     </div>
                     <div className="text-[#3791b9] text-xs">
                       <Message id="faq.contact.phone" fallback="Call us now" />
